@@ -3,17 +3,6 @@
     
         "post0": {
             "title": "Title",
-            "content": "msg = &quot;Hello World!&quot; print(msg) . Hello World . msg = &quot;This is my first Fastpage&quot; print(msg) . This is my first Fastpage .",
-            "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/25/.html",
-            "relUrl": "/2022/08/25/.html",
-            "date": " • Aug 25, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
-            "title": "Title",
             "content": "msg = &quot;Hello world&quot; print(msg) . Hello world . msg = &quot;Hello! How are you?&quot; print(msg) . Hello! How are you? .",
             "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/23/My-Fastpage.html",
             "relUrl": "/2022/08/23/My-Fastpage.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Markdown",
             "content": "My First Markdown . About Rock climbing . chalk | climbing shoes | harness | .",
             "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/22/markdown.html",
