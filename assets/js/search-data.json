@@ -84,6 +84,22 @@
   
 
   
+      ,"page4": {
+          "title": "Pictures",
+          "content": "Pics :) . Summer Crew &lt;3 . . #Crocs4Life .",
+          "url": "https://lydia-c2.github.io/lyds.github.io/pictures/",
+          "relUrl": "/pictures/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -92,18 +108,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lydia-c2.github.io/lyds.github.io/robots.txt",
