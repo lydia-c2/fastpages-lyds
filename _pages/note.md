@@ -9,3 +9,5 @@ Title: Markdown Notes
 ### Class Notes
 Terms: 
 - 
+Links: 
+- https://www.youtube.com/watch?v=sepml4GLLSM
