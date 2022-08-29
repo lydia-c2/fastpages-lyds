@@ -47,9 +47,20 @@
 
   
   
+      ,"page0": {
+          "title": "",
+          "content": "Notes Markdown Page . Class Notes . Terms: . Links: | https://www.youtube.com/watch?v=sepml4GLLSM | .",
+          "url": "https://lydia-c2.github.io/lyds.github.io/_pages/2022-08-29-note.html",
+          "relUrl": "/_pages/2022-08-29-note.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://lydia-c2.github.io/lyds.github.io/about/",
@@ -59,17 +70,6 @@
       
   
 
-  
-
-  
-      ,"page3": {
-          "title": "",
-          "content": "Notes Markdown Page . Class Notes . Terms: . Links: | https://www.youtube.com/watch?v=sepml4GLLSM | .",
-          "url": "https://lydia-c2.github.io/lyds.github.io/_pages/note.html",
-          "relUrl": "/_pages/note.html",
-          "date": ""
-      }
-      
   
 
   
