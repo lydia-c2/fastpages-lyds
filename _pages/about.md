@@ -4,6 +4,12 @@ title: About Lydia
 permalink: /about/
 ---
 
+Hi! I'm Lydia! Here's a little about me:
+
+- I'm a Junior at Del Norte High School
+- I am a competitive rock climber on Team Mesa Rim
+- I love rock climbing, swimming in the ocean, and hanging with my friends
+
 # Me and My Sisters #
 
 ![]({{site.baseurl}}/images/Sisters.png) ![]({{site.baseurl}}/images/Sister.png)
@@ -16,9 +22,19 @@ permalink: /about/
 #F.L.CLUB
 
 
+
+
 # These Are My Teammates #
 
 ![]({{site.baseurl}}/images/Team.png)
 
 Minus Sienna :(
 
+# More Pics #
+
+Summer Crew <3
+
+![]({{site.baseurl}}/images/summer crew.png)
+
+#Crocs4Life
+![]({{site.baseurl}}/images/crog gang.png)
