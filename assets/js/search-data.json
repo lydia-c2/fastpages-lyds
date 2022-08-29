@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Title",
-            "content": "&gt; &quot;print message&quot; . msg = &quot;Hello world&quot; print(msg) . Hello world . msg = &quot;Hello! How are you?&quot; print(msg) . Hello! How are you? .",
-            "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/23/My-Fastpage.html",
-            "relUrl": "/2022/08/23/My-Fastpage.html",
+            "title": "My Fastpage",
+            "content": "&gt; &quot;print message&quot; . Input In [1] &gt; &#34;print message&#34; ^ SyntaxError: invalid syntax . msg = &quot;Hello world&quot; print(msg) . Hello world . msg = &quot;Hello! How are you?&quot; print(msg) . Hello! How are you? .",
+            "url": "https://lydia-c2.github.io/lyds.github.io/notebooks/hello_world",
+            "relUrl": "/notebooks/hello_world",
             "date": " • Aug 23, 2022"
         }
         
