@@ -29,12 +29,3 @@ Hi! I'm Lydia! Here's a little about me:
 ![]({{site.baseurl}}/images/Team.png)
 
 Minus Sienna :(
-
-# More Pics #
-
-Summer Crew <3
-
-![]({{site.baseurl}}/images/summer crew.png)
-
-#Crocs4Life
-![]({{site.baseurl}}/images/crog gang.png)
