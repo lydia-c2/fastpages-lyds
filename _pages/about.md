@@ -1,11 +1,18 @@
 ---
 layout: page
-title: About Me
+title: About Lydia
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+# These Are My Friends #
+
+![]({{site.baseurl}}/images/Friends.png)
+
+#F.L.CLUB
 
 
+# These Are My Teammates #
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+![]({{site.baseurl}}/images/Team.png)
+
+Minus Sienna :(
