@@ -73,6 +73,22 @@
   
 
   
+      ,"page3": {
+          "title": "Notes",
+          "content": "Week 0 . Tools and Downloads Setup | PowerShell cd = change directory | cd ~ = change directory to home | ls = list files | code . = open VSCode | . | Markdown #, ##, ### = size of font | italics | bold | strike through | . | . Week 1 . Python print (“Text”) = will print “msg” | def = used to define function | import = import a function | . | Markdown site.baseurl = embed an image | . | .",
+          "url": "https://lydia-c2.github.io/lyds.github.io/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -81,18 +97,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lydia-c2.github.io/lyds.github.io/robots.txt",
