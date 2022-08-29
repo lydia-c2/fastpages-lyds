@@ -3,6 +3,17 @@
     
         "post0": {
             "title": "Title",
+            "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) rsp = question_with_response(&quot;What command is used to include other functions that were previously developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command is used to evaluate correct or incorrect response in this example?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What grade is Lydia?&quot;) if rsp == &quot;11th&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;When is Lydia&#39;s birthday?&quot;) if rsp == &quot;April 12th&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) rsp = question_with_response(&quot;What is Lydia&#39;s favorite color?&quot;) if rsp == &quot;grey&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) . Hello, lydiacho running /Users/lydiacho/opt/anaconda3/bin/python You will be asked 3 questions. Question: What command is used to include other functions that were previously developed? .",
+            "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/28/my-quiz.html",
+            "relUrl": "/2022/08/28/my-quiz.html",
+            "date": " • Aug 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Title",
             "content": "&gt; &quot;print message&quot; . msg = &quot;Hello world&quot; print(msg) . Hello world . msg = &quot;Hello! How are you?&quot; print(msg) . Hello! How are you? .",
             "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/23/My-Fastpage.html",
             "relUrl": "/2022/08/23/My-Fastpage.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Markdown",
             "content": "My First Markdown . About Rock climbing . chalk | climbing shoes | harness | .",
             "url": "https://lydia-c2.github.io/lyds.github.io/2022/08/22/markdown.html",
