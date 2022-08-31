@@ -26,6 +26,6 @@ Hi! I'm Lydia! Here's a little about me:
 
 # These Are My Teammates #
 
-![]({{site.baseurl}}/images/Team.png)
+![]({{site.baseurl}}/images/Team2.png)
 
-Minus Sienna :(
+#TeamMesaRim #slay
