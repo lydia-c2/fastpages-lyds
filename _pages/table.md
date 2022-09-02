@@ -16,7 +16,9 @@ permalink: /toc/
 
  <tr>
         <td>1</td>
-        <td><a href="{{site.baseurl}}/week/1">week 1</a></td>
         <td>
-
-    </tr>
+            <a href="{{site.baseurl}}/week/1">/notebooks/hello_world</a>
+            <a href="{{site.baseurl}}/week/1">/notebooks/my_quiz</a>
+            <a href="{{site.baseurl}}/week/1">/notebooks/bashandchecks</a></td>
+        </td>
+   
