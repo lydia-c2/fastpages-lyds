@@ -114,6 +114,17 @@
   
 
   
+      ,"page8": {
+          "title": "Table",
+          "content": "Week APCSP Personal Canvas .",
+          "url": "https://lydia-c2.github.io/lyds.github.io/toc/",
+          "relUrl": "/toc/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -125,7 +136,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lydia-c2.github.io/lyds.github.io/robots.txt",
