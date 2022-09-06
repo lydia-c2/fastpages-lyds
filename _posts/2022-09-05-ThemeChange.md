@@ -11,3 +11,7 @@ permalink: /themechange/
 
 
 ![]({{site.baseurl}}/images/ThemeChange.png)
+
+### Here is the SS from when I changed it to dark mode
+
+![]({{site.baseurl}}/images/darkmode.png)
