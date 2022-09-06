@@ -217,6 +217,17 @@ age 16 &lt;class &#39;int&#39;&gt;
         <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 
 <span class="n">for_loop</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -231,6 +242,12 @@ age 16 &lt;class &#39;int&#39;&gt;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[{&#39;FirstName&#39;: &#39;Lydia&#39;, &#39;LastName&#39;: &#39;Cho&#39;, &#39;DOB&#39;: &#39;April 12&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;lydiac55288@stu.powayusd.com&#39;}]
 For loop output
+
+Lydia Cho
+	 Residence: San Diego
+	 Birth Day: April 12
+
+While loop output
 
 Lydia Cho
 	 Residence: San Diego
@@ -275,8 +292,52 @@ Lydia Cho
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Lydia
-ALL
-Grey
+Cheesecake Factory Bread
+grey
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recursive loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+Lydia Cho
+	 Residence: San Diego
+	 Birth Day: April 12
+
 </pre>
 </div>
 </div>
