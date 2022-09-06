@@ -22,3 +22,8 @@ permalink: /toc/
             <a href="{{site.baseurl}}/notebooks/bashandchecks">Bash and Checks</a>
         </td>
    
+<tr>
+        <td>2</td>
+        <td>
+            <a href="{{site.baseurl}}/notebooks/list_and_dictionary">List & Dictionary</a>
+        </td>
