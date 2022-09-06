@@ -26,4 +26,5 @@ permalink: /toc/
         <td>2</td>
         <td>
             <a href="{{site.baseurl}}/notebooks/list_and_dictionary">List & Dictionary</a>
+            <a href="{{site.baseurl}}/themechange/">Theme Change</a>
         </td>
