@@ -1,11 +1,10 @@
 ---
+Title: Quiz Ideas Brainstorm
 Toc: false
 Layout: post
 description: Quiz Ideas Brainstorn
 Categories: [week 3]
-Title: Quiz Ideas Brainstorm
 ---
-
 # Quiz Outline
 
 - Make a cell phone layout
