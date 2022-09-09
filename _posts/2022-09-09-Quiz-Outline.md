@@ -2,7 +2,7 @@
 Title: Quiz Ideas Brainstorm
 Toc: false
 Layout: post
-description: Quiz Ideas Brainstorn
+description: Quiz Ideas Brainstorm
 Categories: [week 3]
 ---
 # Quiz Outline
