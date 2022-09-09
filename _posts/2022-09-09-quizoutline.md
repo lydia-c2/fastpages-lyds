@@ -4,7 +4,6 @@ Layout: post
 description: Quiz Ideas Brainstorn
 Categories: [week 3]
 Title: Quiz Ideas Brainstorm
-permalink: /QuizOutline/
 ---
 
 # Quiz Outline
