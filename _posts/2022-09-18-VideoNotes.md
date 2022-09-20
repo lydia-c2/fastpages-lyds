@@ -1,6 +1,11 @@
 ---
 keywords: fastai
-title: Title
+description: Yale Video Notes
+title: Video Notes
+toc: false
+comments: true
+permalink: /notebooks/videonotes
+categories: [week 4]
 nb_path: _notebooks/2022-09-18-VideoNotes.ipynb
 layout: notebook
 ---
@@ -14,67 +19,37 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">&gt;</span> <span class="n">This</span> <span class="n">Quiz</span> <span class="ow">is</span> <span class="n">About</span> <span class="n">Me</span><span class="o">.</span> <span class="n">Good</span> <span class="n">Luck</span><span class="err">!</span>
-
-<span class="o">-</span> <span class="n">toc</span><span class="p">:</span> <span class="n">false</span>
-<span class="o">-</span> <span class="n">comments</span><span class="p">:</span> <span class="n">true</span>
-<span class="o">-</span> <span class="n">permalink</span><span class="p">:</span> <span class="o">/</span><span class="n">notebooks</span><span class="o">/</span><span class="n">videonotes</span>
-<span class="o">-</span> <span class="n">categories</span><span class="p">:</span> <span class="p">[</span><span class="n">week</span> <span class="mi">4</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">-</span> <span class="n">Students</span> <span class="n">are</span> <span class="n">too</span> <span class="n">stressed</span> <span class="n">to</span> <span class="n">do</span> <span class="n">things</span> <span class="n">they</span> <span class="n">enjoy</span>
-<span class="o">-</span> <span class="n">Studnets</span> <span class="n">feel</span> <span class="n">lonely</span>
-<span class="o">-</span> <span class="n">Over</span> <span class="mi">40</span><span class="o">%</span> <span class="n">of</span> <span class="n">students</span> <span class="n">experience</span> <span class="n">above</span> <span class="n">the</span> <span class="n">average</span> <span class="n">level</span> <span class="n">of</span> <span class="n">stress</span>
-<span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="n">of</span> <span class="n">students</span> <span class="n">feel</span> <span class="n">too</span> <span class="n">deppressed</span> <span class="n">to</span> <span class="n">function</span>
-<span class="o">-</span> <span class="n">Over</span> <span class="mi">40</span><span class="o">%</span> <span class="n">of</span> <span class="n">students</span> <span class="n">feel</span> <span class="n">hopeless</span>
-<span class="o">-</span> <span class="mi">60</span><span class="o">%</span> <span class="n">of</span> <span class="n">students</span> <span class="n">feel</span> <span class="n">overwhelming</span> <span class="n">anxiety</span>
-<span class="o">-</span> <span class="n">Over</span> <span class="mi">50</span><span class="o">%</span> <span class="n">of</span> <span class="n">students</span> <span class="n">feel</span> <span class="n">very</span><span class="p">,</span> <span class="n">very</span> <span class="n">lonely</span>
-<span class="o">-</span> <span class="n">Over</span> <span class="mi">80</span><span class="o">%</span> <span class="n">feel</span> <span class="n">overwhelmed</span> <span class="k">with</span> <span class="nb">all</span> <span class="n">that</span> <span class="n">they</span> <span class="n">have</span> <span class="n">to</span> <span class="n">do</span>
-<span class="o">-</span> <span class="n">Knowledge</span> <span class="n">without</span> <span class="n">application</span> <span class="n">means</span> <span class="n">nothing</span>
-<span class="o">-</span> <span class="n">Our</span> <span class="n">behaviors</span> <span class="n">a</span> <span class="n">ffect</span> <span class="n">our</span> <span class="n">happiness</span>
-<span class="o">-</span> <span class="n">Cognitive</span> <span class="n">Bias</span> <span class="o">=</span> <span class="n">GI</span> <span class="n">Joe</span> <span class="n">Fallacy</span>
-<span class="o">-</span> <span class="n">Happier</span> <span class="n">people</span> <span class="n">spend</span> <span class="n">more</span> <span class="n">times</span> <span class="k">with</span> <span class="n">others</span>
-
-<span class="c1">## Important Studies and Sciences</span>
-<span class="o">-</span> <span class="n">The</span> <span class="n">Study</span> <span class="n">of</span> <span class="n">Happy</span> <span class="n">People</span>
-<span class="o">-</span> <span class="n">The</span> <span class="n">Study</span> <span class="n">of</span> <span class="n">behavioral</span> <span class="n">change</span>
-<span class="o">-</span> <span class="n">Science</span> <span class="n">of</span> <span class="n">Psychology</span>
-
-<span class="c1">## Top 10 Insights from The Science of Psychology and the Good Life</span>
-<span class="mf">1.</span> <span class="n">You</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">have</span> <span class="n">to</span> <span class="n">be</span> <span class="n">stuck</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">state</span> <span class="n">of</span> <span class="n">well</span><span class="o">-</span><span class="n">being</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">always</span> <span class="n">improve</span> <span class="n">it</span>
-<span class="mf">2.</span> <span class="n">Things</span> <span class="n">like</span> <span class="n">where</span> <span class="n">we</span> <span class="n">live</span><span class="p">,</span> <span class="n">what</span> <span class="n">job</span> <span class="n">we</span> <span class="n">have</span><span class="p">,</span> <span class="n">our</span> <span class="n">salary</span><span class="p">,</span>  <span class="n">etc</span><span class="o">.</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">matter</span> <span class="k">as</span> <span class="n">much</span> <span class="k">as</span> <span class="n">we</span> <span class="n">think</span>
-<span class="mf">3.</span> <span class="n">Taking</span> <span class="n">control</span> <span class="n">of</span> <span class="n">your</span> <span class="n">life</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">bring</span> <span class="n">you</span> <span class="n">to</span> <span class="n">happiness</span><span class="p">,</span> <span class="n">but</span> <span class="n">following</span> <span class="n">the</span> <span class="n">habits</span> <span class="n">of</span> <span class="n">happy</span> <span class="n">people</span> <span class="n">can</span> <span class="n">improve</span> <span class="n">your</span> <span class="n">well</span><span class="o">-</span><span class="n">being</span>
-<span class="mf">4.</span> <span class="n">Recognizing</span> <span class="n">that</span> <span class="n">your</span> <span class="n">mind</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">liar</span> <span class="ow">and</span> <span class="n">your</span> <span class="n">intuition</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">trusted</span> <span class="n">when</span> <span class="n">it</span> <span class="n">comes</span> <span class="n">to</span> <span class="n">what</span> <span class="n">happiness</span> <span class="ow">is</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Video-Notes">Video Notes<a class="anchor-link" href="#Video-Notes"> </a></h2><ul>
+<li>Students are too stressed to do things they enjoy</li>
+<li>Studnets feel lonely</li>
+<li>Over 40% of students experience above the average level of stress</li>
+<li>1/3 of students feel too deppressed to function</li>
+<li>Over 40% of students feel hopeless</li>
+<li>60% of students feel overwhelming anxiety</li>
+<li>Over 50% of students feel very, very lonely</li>
+<li>Over 80% feel overwhelmed with all that they have to do</li>
+<li>Knowledge without application means nothing</li>
+<li>Our behaviors a ffect our happiness</li>
+<li>Cognitive Bias = GI Joe Fallacy</li>
+<li>Happier people spend more times with others</li>
+</ul>
+<h2 id="Important-Studies-and-Sciences">Important Studies and Sciences<a class="anchor-link" href="#Important-Studies-and-Sciences"> </a></h2><ul>
+<li>The Study of Happy People</li>
+<li>The Study of behavioral change</li>
+<li>Science of Psychology</li>
+</ul>
+<h2 id="Top-10-Insights-from-The-Science-of-Psychology-and-the-Good-Life">Top 10 Insights from The Science of Psychology and the Good Life<a class="anchor-link" href="#Top-10-Insights-from-The-Science-of-Psychology-and-the-Good-Life"> </a></h2><ol>
+<li>You do not have to be stuck in a state of well-being, you can always improve it</li>
+<li>Things like where we live, what job we have, our salary,  etc. do not matter as much as we think</li>
+<li>Taking control of your life may not bring you to happiness, but following the habits of happy people can improve your well-being</li>
+<li>Recognizing that your mind is a liar and your intuition cannot be trusted when it comes to what happiness is</li>
+</ol>
 
 </div>
-    {% endraw %}
-
+</div>
+</div>
 </div>
  
 
