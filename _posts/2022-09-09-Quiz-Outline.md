@@ -18,4 +18,7 @@ Categories: [week 3]
 - All apps have back to home buttons
 - Insert radio button on home screen --> lock screen
 
+NOTES:
+- Quiz shows input and output with the "on-event" code 
+
 QUIZ LINK: https://studio.code.org/projects/applab/7FyBTOeW5LTCta2Q1Z3ZlLsFXuzzRota5b7uXiTt1_I/edit
