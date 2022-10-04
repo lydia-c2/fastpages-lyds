@@ -28,3 +28,16 @@ permalink: /toc/
             <a href="{{site.baseurl}}/notebooks/list_and_dictionary">List & Dictionary</a>
             <a href="{{site.baseurl}}/themechange/">Theme Change</a>
         </td>
+
+
+  <table>
+    <tr>
+     <th>JavaScript</th>
+     <th>Performance Task</th>
+    </tr>
+ <tr>
+        <td>
+            <a href="{{site.baseurl}}/notebooks/javascript_commands">JavaScript</a>
+        <td>
+            <a href="{{site.baseurl}}/performancetaskideas/md">Performance Task Ideas</a>
+        </td>

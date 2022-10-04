@@ -3,6 +3,7 @@ Toc: false
 Layout: post
 description: Performance Task Brainstorm
 Categories: [markdown]
+permalink: /performancetaskideas/md
 Title: Performance Task Ideas
 ---
 
