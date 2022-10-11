@@ -1,11 +1,12 @@
 ---
+
 toc: true
 comments: true
 layout: post
 title: College Board Performance Task
 description: Performance Task Outline
 permalink: /outline_performance_task/create
-week: 7
+
 ---
 
 ## Learning Create Performance Task, 30% of grade on AP exam
