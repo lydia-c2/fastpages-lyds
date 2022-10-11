@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      16 min read
     
 </span></p>
 
@@ -187,6 +187,50 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://videogames-news2.p.rapidapi.com/videogames_news/search_news"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"query"</span><span class="p">:</span><span class="s2">"GTA"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"ac19fd0e7fmsh8aa74f832776d76p1f560ejsnb4ec82e7696c"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"videogames-news2.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{"title":"GTA: Vice City's Secret Scarface Room Explained","date":"Sun, 09 Oct 2022 13:15:13 GMT","description":"The Apartment 3C in GTA: Vice City is one of its best special locations, containing a reference to one of Scarface's most infamous scenes.","image":"https://static1.srcdn.com/wordpress/wp-content/uploads/2022/09/GTA-VICE-CITY-APARTMENT-3C.jpg","link":"https://screenrant.com/gta-vice-city-scarface-room-chainsaw-easter-egg/"},{"title":"How GTA 6 Can Improve The Series’ Signature Crime Sprees","date":"Sat, 08 Oct 2022 21:00:13 GMT","description":"Grand Theft Auto's cops are often more of an obstacle than they need to be. GTA 6 could make them easier and more enjoyable to deal with in a chase.","image":"https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/gta-6-cop-chase-changes.jpg","link":"https://screenrant.com/gta-6-series-crime-sprees-heist-missions-cops/"},{"title":"GTA 5 mod adds huge San Andreas map to Rockstar sandbox game","date":"Fri, 07 Oct 2022 11:21:43 +0100","description":"A GTA 5 mod improves and enlarges the classic Rockstar sandbox game by incorporating a huge section of the original San Andreas map into Los Santos, something to check out and get your teeth into as we wait on that coveted GTA 6 release date.","image":"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/10/gta-5-mod-san-andreas-map.jpg","link":"https://www.pcgamesn.com/grand-theft-auto-v/san-andreas-map-mod"},{"title":"Pop Culture References You Likely Missed In GTA: San Andreas","date":"Thu, 06 Oct 2022 16:30:13 GMT","description":"Rockstar is known for loading their Grand Theft Auto games with pop culture references, but did you spot these ones in GTA San Andreas?","image":"https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/10/Pop-Culture-References-You-Missed-in-GTA-SA.jpg","link":"https://www.thegamer.com/gta-san-andreas-pop-culture-references-easter-eggs-secrets/"},{"title":"This Atari 2600 gaming PC can run The Witcher 3 and GTA 5","date":"Thu, 06 Oct 2022 16:31:14 +0100","description":"A custom gaming PC enthusiast has transformed an old Atari 2600 into a modern system, and it trades classic games for contemporary releases like GTA 5 and The Witcher 3. The retro console originally arrived in 1977, but cramming a motherboard, RAM, and an AMD gaming CPU into its ancient shell could extend its life tenfold.","image":"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/10/atari-2600-custom-gaming-pc.jpg","link":"https://www.pcgamesn.com/atari-2600-gaming-pc-the-witcher-3-gta-5"},{"title":"GTA 5’s Trevor, Steven Ogg, sends “annoyed, berating” vid to GTA 6 fan","date":"Thu, 06 Oct 2022 12:39:31 +0100","description":"GTA 5 Trevor actor Steven Ogg has sent a Cameo video to one Rockstar fan who describes his response as “annoyed” and “berating”. The performer was asked to record a message for the GTA 6 characters Jason and Lucia warning them about the dangers of Vice City in the upcoming sandbox game.","image":"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/10/gta-5-trevor-steven-ogg-gta-6-cameo.jpg","link":"https://www.pcgamesn.com/grand-theft-auto-v/trevor-steven-ogg-cameo-gta-6"},{"title":"GTA Online weekly update adds new car, the Audi R8 style Obey 10F","date":"Thu, 06 Oct 2022 12:40:35 +0100","description":"The GTA Online weekly update is here, and the week of October 6 sees Rockstar add another new car, the Audi R8-style Obey 10F, to its online multiplayer game. The new addition continues the rollout of cars from the Grand Theft Auto 5 Criminal Enterprises update. The full patch notes from Rockstar are due later, but we’ve got all the details right here, so read on to find out what’s going on in the crime game for the week of October 6-12.","image":"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/10/gta-5-online-weekly-update-october-6-new-car-obey-10f-audi-r8-rockstar.jpg","link":"https://www.pcgamesn.com/grand-theft-auto-v/gta-online-weekly-update-october-6"},{"title":"GTA podium car: here’s what vehicle you can win in GTA Online","date":"Thu, 06 Oct 2022 12:36:55 +0100","description":"What is the GTA podium car this week? GTA Online vehicles are expensive things, so we're happy to take a spin on the Diamond Casino's Lucky Wheel to get a discount. Winning isn't guaranteed, sure, but it isn't out of the question either. Look, we don't have a problem - leave it alone. Finding out what the GTA Online podium car is simple enough - it's winning it that's the challenge. You can spin the Diamond Casino's Lucky Wheel once a day, and each Podium Car refreshes after seven days on a Thursday. Basically, you have seven shots to get the vehicle of that given week. If you own a Penthouse, you can spin it for free, but if you don't it's $500 a spin. Don't fret if you don't win, as you can try for something else. You have a one in 20 chance of getting the podium vehicle, a car discount, or a mystery prize. There's a four in 20 chance of getting clothes, chips, and cash. Finally, there's a five in 20 chance of getting RP. On that note, here's everything you need to know about this week's GTA podium car.","image":"https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/03/gta-5-podium-car-online.jpg","link":"https://www.pcgamesn.com/grand-theft-auto-v/gta-5-podium-car-online"},{"title":"You Can Only Complete GTA V If You Kill At Least 96 People","date":"Wed, 05 Oct 2022 15:35:07 +0000","description":"Matthew Judge, or Twitch streamer and YouTube creator DarkViperAU, has been working on his “pacifist run” of GTA V for three years. You might know “pacifism” as abhorring all violence, but pacifist video game runs have a more Machiavellian approach to world peace: It’s okay to kill, as long as the killing is a... Read more...","image":"https://i.kinja-img.com/gawker-media/image/upload/s--QRoXbHqU--/c_fit,fl_progressive,q_80,w_636/6b8e074d87f6aa82667c79affb24559f.jpg","link":"https://kotaku.com/gta-v-pacifist-run-youtube-twitch-darkviperau-1849619220"},{"title":"12 Best Custom Game Modes In GTA 5","date":"Wed, 05 Oct 2022 15:16:13 GMT","description":"These custom game modes add new ways to play GTA 5.","image":"https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/01/game2-2.jpg","link":"https://www.thegamer.com/best-custom-game-modes-gta-5/"}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
