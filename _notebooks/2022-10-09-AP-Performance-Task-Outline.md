@@ -5,9 +5,7 @@ layout: post
 title: College Board Performance Task
 description: Performance Task Outline
 permalink: /outline_performance_task/create
-image: /images/create_performance_task.png
-type: ap
-week: 3
+week: 7
 ---
 
 ## Learning Create Performance Task, 30% of grade on AP exam
