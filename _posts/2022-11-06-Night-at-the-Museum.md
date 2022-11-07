@@ -26,6 +26,6 @@ This is a picture of the playlist site I saw when I walked around the Night at t
 
 Finally, Lina and I went to visit many of the Art classes like AP Studio Art, Digital Design (I think it's called smthing else), and Ceramics. It was really cool to see all the ceramics artwork. Plus, in studio art, we learned about the prompt behind their art pieces which was really cool. 
  
- ## Next Steps
+## Next Steps
 
- Next time, I think I want to present to more people about our own project and let people interact with what we've built. Plus,  would like to see more projects from other students. 
+Next time, I think I want to present to more people about our own project and let people interact with what we've built. Plus,  would like to see more projects from other students. 
