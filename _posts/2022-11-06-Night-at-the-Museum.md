@@ -4,9 +4,9 @@ description: What I saw at Night at the Museum!
 title: Night at the Museum Blog
 toc: false
 comments: true
-permalink: /notebooks/collabnotes
-categories: [week 4]
-nb_path: _notebooks/CollaborationNotes.ipynb
+permalink: /notebooks/natm
+categories: [week 12]
+nb_path: _notebooks/NATM.ipynb
 layout: notebook
 ---
 
