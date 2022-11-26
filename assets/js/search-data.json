@@ -209,6 +209,17 @@
         
     
   
+    
+        ,"post19": {
+            "title": "Binary Math",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | . | | | .",
+            "url": "https://lydia-c2.github.io/lyds.github.io/frontend/binary",
+            "relUrl": "/frontend/binary",
+            "date": " • Jul 7, 2022"
+        }
+        
+    
+  
 
   
   
@@ -276,12 +287,15 @@
   
 
   
+  
+
+  
 
   
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lydia-c2.github.io/lyds.github.io/robots.txt",
