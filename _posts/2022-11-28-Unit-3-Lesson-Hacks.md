@@ -1,12 +1,12 @@
 --- 
 
 description: Unit 3.1-3.2 Hacks
-title: Unit 3.1-3.2 Hacks
+title: Unit 3 Lesson 1 Hacks
 toc: false
 comments: true
-permalink: /markdown/3.1Hacks
+permalink: /markdown/U3L1Hacks
 categories: [week 14]
-nb_path: _markdown/Unit3.1Hacks
+nb_path: _markdown/Unit3Lesson1Hacks
 layout: notebook
 
 ---
