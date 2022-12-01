@@ -123,7 +123,11 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h2 id="hacks-1">Hacks #1:</h2>
+    <h2 id="variable-hacks">Variable Hacks</h2>
+
+<p><img src="/lyds.github.io/images/Variables3.1.png" alt="" /></p>
+
+<h2 id="hacks-1">Hacks #1:</h2>
 <p>Answer these:</p>
 <ul>
   <li>In your <strong>own</strong> words, briefly explain by writing down what an assignment operator is</li>
@@ -172,6 +176,23 @@ A: “hello world”</p>
 <p>Extra work: Try to create an index that lists your favorite food and print the element at index 3.
 More work: Create a list of your favorite foods and create an index to access them.</p>
 
+<p><img src="/lyds.github.io/images/FavFoodVariables.png" alt="" /></p>
+
+<h3 id="number-list-fix">Number List Fix</h3>
+
+<p><img src="/lyds.github.io/images/numListFix.png" alt="" /></p>
+
+<h3 id="variable-quiz">Variable Quiz</h3>
+
+<p><img src="/lyds.github.io/images/VariableQuiz.png" alt="" /></p>
+
+<h3 id="simplify-food-list">Simplify Food List</h3>
+
+<p><img src="/lyds.github.io/images/SimplifyFoodList.png" alt="" /></p>
+
+<h3 id="managing-complexity-list">Managing Complexity List</h3>
+
+<p><img src="/lyds.github.io/images/ManagingComplexityList.png" alt="" /></p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
