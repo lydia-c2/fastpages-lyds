@@ -31,7 +31,7 @@ layout: notebook
 
 ## NOT, AND, OR
 
-![]({{site.baseurl}}/images/NotAndOr.png)
+![]({{site.baseurl}}/images/NotAndOrTake2.png)
 
 
 
