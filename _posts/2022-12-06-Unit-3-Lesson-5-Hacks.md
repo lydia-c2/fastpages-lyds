@@ -40,15 +40,19 @@ layout: notebook
 6. If competitions<2:
 - Print(Ineligible)
 
+### EXTRA WHILE LOOP CODE
+
+![]({{site.baseurl}}/images/minNumWhile.png)
 
 #### CODE
 
-![]({{site.baseurl}}/images/FlowCode1.png)
+![]({{site.baseurl}}/images/FixQualifiedRegionals.png)
 
 
 ### Hack 3.9.3
 
 ![]({{site.baseurl}}/images/numGuessQuiz.png)
+
 
 ##### Flow Chart
 
@@ -86,4 +90,4 @@ layout: notebook
     
     d. ["xylophone", "snowman", "snake", "doorbell", "author"]
 
-- I think b. is the answer because you cannot have negative numbers in binary.
+- I think c. is the answer because the numbers have to be in order within the list.
