@@ -5,7 +5,7 @@ title: Unit 3 Lesson 4 Hacks
 toc: false
 comments: true
 permalink: /markdown/U3L4Hacks
-categories: [week 14]
+categories: [week 15]
 nb_path: _markdown/Unit3Lesson4Hacks
 layout: notebook
 
@@ -38,6 +38,7 @@ STOPPING CONDITION: use "break" to stop the iteration
 
 ### Iteration Statement:
 Iteration statements repeat statements 0+ times (in a loop) until the conditional to break the look is met
+
 
 ![]({{site.baseurl}}/images/DescendingList.png)
 
