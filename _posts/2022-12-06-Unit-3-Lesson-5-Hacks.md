@@ -20,6 +20,8 @@ layout: notebook
 - It is important to know this because it allows people to collaborate and work on the same problem.(0.15)
 - for the converted conditional to boolean conversion(0.10)
 
+![]({{site.baseurl}}/images/goPractice.png)
+
 ### Hack 3.9.2
 
 ##### Regionals Qualification
@@ -46,12 +48,42 @@ layout: notebook
 
 ### Hack 3.9.3
 
+![]({{site.baseurl}}/images/numGuessQuiz.png)
+
 ##### Flow Chart
 
-##### Edited Code
-
+![]({{site.baseurl}}/images/NumberGameFlow.png)
 
 
 ## Unit 3.11
 
-###
+### Binary Trees
+
+1. calculate the middle index and create a binary tree for each of these lists
+    - 12, 14, 43, **57**, 79, 80, 99
+    - 92, 43, 74, **66**, 30, 12, 1
+    - 7, 13, 96, **111**, 33, 84, 60
+
+![]({{site.baseurl}}/images/binaryTree1.png)
+
+![]({{site.baseurl}}/images/binaryTree2.png)
+
+![]({{site.baseurl}}/images/binaryTree3.png)
+
+
+
+2. Using one of the sets of numbers from the question above, what would be the second number looked at in a binary search if the number is more than the middle number?
+
+- Using the list "12, 14, 43, 57, 79, 80, 99," the second number in the binary search if the number is more than the middle number would be 80.
+
+3. Which of the following lists can NOT a binary search be used in order to find a targeted value?
+
+    a. ["amy", "beverly", "christian", "devin"]
+
+    ##### b. [-1, 2, 6, 9, 19]
+
+    c. [3, 2, 8, 12, 99]
+    
+    d. ["xylophone", "snowman", "snake", "doorbell", "author"]
+
+- I think b. is the answer because you cannot have negative numbers in binary.
