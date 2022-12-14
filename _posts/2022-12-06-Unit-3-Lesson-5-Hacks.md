@@ -51,7 +51,8 @@ layout: notebook
 
 ### Hack 3.9.3
 
-![]({{site.baseurl}}/images/numGuessQuiz.png)
+![]({{site.baseurl}}/images/fixNumberGuess.png)
+![]({{site.baseurl}}/images/NumberGuessOutput.png)
 
 
 ##### Flow Chart
