@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      5 min read
     
 </span></p>
 
@@ -196,13 +196,258 @@ Number of iterations: 16
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hacks-#2">Hacks #2<a class="anchor-link" href="#Hacks-#2"> </a></h2><h4 id="(Based-on)-Mini-Activity-Idea">(Based on) Mini Activity Idea<a class="anchor-link" href="#(Based-on)-Mini-Activity-Idea"> </a></h4>
+<h2 id="Hack-2">Hack 2<a class="anchor-link" href="#Hack-2"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Efficient-Algorithm:">Efficient Algorithm:<a class="anchor-link" href="#Efficient-Algorithm:"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;=</span><span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;did u stay up reading...&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">&lt;=</span><span class="mi">5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;were you watching netflix?&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">&lt;=</span><span class="mi">8</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ehh... you still need more sleep&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;congratulations you got 9 hours!!!!!&quot;</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>you got  0  hours of sleep
+did u stay up reading...
+you got  1  hours of sleep
+did u stay up reading...
+you got  2  hours of sleep
+did u stay up reading...
+you got  3  hours of sleep
+were you watching netflix?
+you got  4  hours of sleep
+were you watching netflix?
+you got  5  hours of sleep
+were you watching netflix?
+you got  6  hours of sleep
+ehh... you still need more sleep
+you got  7  hours of sleep
+ehh... you still need more sleep
+you got  8  hours of sleep
+ehh... you still need more sleep
+you got  9  hours of sleep
+congratulations you got 9 hours!!!!!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Inefficient-Algorithm">Inefficient Algorithm<a class="anchor-link" href="#Inefficient-Algorithm"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;did u stay up reading...&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;did u stay up reading...&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;did u stay up reading...&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">4</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;did u stay up reading...&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;were you watching netflix?&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;were you watching netflix?&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">7</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;were you watching netflix?&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span><span class="mi">8</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ehh... you still need more sleep&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you got &quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">&quot; hours of sleep&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;congratulations you got 9 hours!!!!!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>you got  1  hours of sleep
+did u stay up reading...
+you got  2  hours of sleep
+did u stay up reading...
+you got  3  hours of sleep
+did u stay up reading...
+you got  4  hours of sleep
+did u stay up reading...
+you got  5  hours of sleep
+were you watching netflix?
+you got  6  hours of sleep
+were you watching netflix?
+you got  7  hours of sleep
+were you watching netflix?
+you got  8  hours of sleep
+ehh... you still need more sleep
+you got  9  hours of sleep
+congratulations you got 9 hours!!!!!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Explanation:">Explanation:<a class="anchor-link" href="#Explanation:"> </a></h3><p>The first code is way more efficient than the second as it utilizes loops and ranges of numbers within conditionals to run the code faster. This way was more efficient as it took less steps to write out the program, as well as for the algorithm to run. This way was also easier to debug as the code was short and easy to read and fix mistakes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-#3">Hacks #3<a class="anchor-link" href="#Hacks-#3"> </a></h2><h3 id="What-is-Algorithm-Efficiency?">What is Algorithm Efficiency?<a class="anchor-link" href="#What-is-Algorithm-Efficiency?"> </a></h3><p>Algorithm Efficiency is the number of steps required to run through an algorithm or find a solution. An efficient algorithm would have less steps to get to the end of an sequence. For example, in the efficient code from Hack #2, I used a while loop and for loop to make less steps for writing out a sleep schedule. An inefficient code, like the second part of Hack #2, might be repetitive or could be condensed into a much simpler code that gets the same results.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-#4-Tasks">Hacks #4 Tasks<a class="anchor-link" href="#Hacks-#4-Tasks"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">period</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What period is it?&quot;</span><span class="p">))</span>
+<span class="n">Class</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Spanish&quot;</span><span class="p">,</span> <span class="s2">&quot;US History&quot;</span><span class="p">,</span> <span class="s2">&quot;Physics 2&quot;</span><span class="p">,</span> <span class="s2">&quot;APSCP&quot;</span><span class="p">,]</span>
+<span class="k">def</span> <span class="nf">complete_day</span><span class="p">(</span><span class="n">Class</span><span class="p">):</span>
+ <span class="k">if</span> <span class="n">period</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;period: &quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">Class</span> <span class="ow">in</span> <span class="n">Class</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">Class</span> <span class="o">==</span> <span class="s2">&quot;Spanish&quot;</span><span class="p">:</span>
+            <span class="n">span</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What Spanish HW&quot;</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Spanish: &quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">span</span><span class="p">)</span>
+
+ <span class="k">elif</span>  <span class="n">period</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Period: &quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Class</span> <span class="o">==</span> <span class="s2">&quot;US History&quot;</span><span class="p">:</span>
+        <span class="n">history</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What History HW?&quot;</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;History: &quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">history</span><span class="p">)</span>
+
+ <span class="k">elif</span> <span class="n">period</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Period: &quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Class</span> <span class="o">==</span> <span class="s2">&quot;Physics 2&quot;</span><span class="p">:</span>
+        <span class="n">physics</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What Physics HW?&quot;</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Physics: &quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">physics</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Period: &quot;</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span>
+        <span class="n">apcsp</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What APCSP HW?&quot;</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;APSCP: &quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">apcsp</span><span class="p">)</span>
+ 
+<span class="n">complete_day</span><span class="p">(</span><span class="n">Class</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>period:  1
+Spanish: 
+nada! felices fiestas!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="EXTRA:-Agenda-Planner-based-on-Mini-Activity-Idea">EXTRA: Agenda Planner based on Mini Activity Idea<a class="anchor-link" href="#EXTRA:-Agenda-Planner-based-on-Mini-Activity-Idea"> </a></h4>
 </div>
 </div>
 </div>
