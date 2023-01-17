@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -132,6 +132,12 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Model-and-Object-Oriented-Programming-Hacks">Model and Object-Oriented Programming Hacks<a class="anchor-link" href="#Model-and-Object-Oriented-Programming-Hacks"> </a></h1>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -139,7 +145,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="k">def</span> <span class="nf">calculate_age</span><span class="p">(</span><span class="n">born</span><span class="p">):</span>
     <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
@@ -164,7 +170,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># A gateway in necessary as a web server cannot communicate directly with Python.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A gateway in necessary as a web server cannot communicate directly with Python.</span>
 <span class="c1"># In this case, imports are focused on generating hash code to protect passwords.</span>
 <span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
@@ -286,10 +292,45 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;JSON ready string:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Raw Variables of object:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">vars</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Raw Attributes and Methods of object:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">dir</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Representation to Re-Create the object:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Representation to Re-Create the object:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test 1, find user 3
+{&#34;name&#34;: &#34;Lydia Cho&#34;, &#34;uid&#34;: &#34;lyds&#34;, &#34;dob&#34;: &#34;04-12-2006&#34;, &#34;age&#34;: 16}
+{&#34;name&#34;: &#34;Alexa Carlson&#34;, &#34;uid&#34;: &#34;lex&#34;, &#34;dob&#34;: &#34;05-16-2006&#34;, &#34;age&#34;: 16}
+* {&#34;name&#34;: &#34;Ava Carlson&#34;, &#34;uid&#34;: &#34;aves&#34;, &#34;dob&#34;: &#34;05-16-2006&#34;, &#34;age&#34;: 16}
+{&#34;name&#34;: &#34;Sri Kotturi&#34;, &#34;uid&#34;: &#34;sri&#34;, &#34;dob&#34;: &#34;12-13-2005&#34;, &#34;age&#34;: 17}
+Test 2, change user 3
+{&#34;name&#34;: &#34;Lydia Cho&#34;, &#34;uid&#34;: &#34;lyds&#34;, &#34;dob&#34;: &#34;04-12-2006&#34;, &#34;age&#34;: 16}
+{&#34;name&#34;: &#34;Alexa Carlson&#34;, &#34;uid&#34;: &#34;lex&#34;, &#34;dob&#34;: &#34;05-16-2006&#34;, &#34;age&#34;: 16}
+* {&#34;name&#34;: &#34;Bubba (Lillia) C&#34;, &#34;uid&#34;: &#34;bubbs&#34;, &#34;dob&#34;: &#34;05-16-2006&#34;, &#34;age&#34;: 16}
+{&#34;name&#34;: &#34;Sri Kotturi&#34;, &#34;uid&#34;: &#34;sri&#34;, &#34;dob&#34;: &#34;12-13-2005&#34;, &#34;age&#34;: 17}
+JSON ready string:
+ {&#34;name&#34;: &#34;Lydia Cho&#34;, &#34;uid&#34;: &#34;lyds&#34;, &#34;dob&#34;: &#34;04-12-2006&#34;, &#34;age&#34;: 16} 
+
+Raw Variables of object:
+ {&#39;_name&#39;: &#39;Lydia Cho&#39;, &#39;_uid&#39;: &#39;lyds&#39;, &#39;_password&#39;: &#39;sha256$dekmEGBawVMErsLE$bc43d5ef9924348d7e35ca95e7d183da06fc45025806dff2439598a2ce67af3c&#39;, &#39;_dob&#39;: datetime.date(2006, 4, 12)} 
+
+Raw Attributes and Methods of object:
+ [&#39;__class__&#39;, &#39;__delattr__&#39;, &#39;__dict__&#39;, &#39;__dir__&#39;, &#39;__doc__&#39;, &#39;__eq__&#39;, &#39;__format__&#39;, &#39;__ge__&#39;, &#39;__getattribute__&#39;, &#39;__gt__&#39;, &#39;__hash__&#39;, &#39;__init__&#39;, &#39;__init_subclass__&#39;, &#39;__le__&#39;, &#39;__lt__&#39;, &#39;__module__&#39;, &#39;__ne__&#39;, &#39;__new__&#39;, &#39;__reduce__&#39;, &#39;__reduce_ex__&#39;, &#39;__repr__&#39;, &#39;__setattr__&#39;, &#39;__sizeof__&#39;, &#39;__str__&#39;, &#39;__subclasshook__&#39;, &#39;__weakref__&#39;, &#39;_dob&#39;, &#39;_name&#39;, &#39;_password&#39;, &#39;_uid&#39;, &#39;age&#39;, &#39;dictionary&#39;, &#39;dob&#39;, &#39;is_password&#39;, &#39;is_uid&#39;, &#39;name&#39;, &#39;set_password&#39;, &#39;uid&#39;] 
+
+Representation to Re-Create the object:
+ User(name=Lydia Cho, uid=lyds, password=sha256$dekmEGBawVMErsLE$bc43d5ef9924348d7e35ca95e7d183da06fc45025806dff2439598a2ce67af3c,dob=2006-04-12) 
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
