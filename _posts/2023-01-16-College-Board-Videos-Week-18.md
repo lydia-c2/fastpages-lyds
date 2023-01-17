@@ -13,15 +13,14 @@ layout: post
 ## [COLLEGE BOARD RUBRIC](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf)
 
 
-# Video #1
 
-## [My Rubric](https://github.com/lydia-c2/lyds.github.io/issues/15)
+
+## [My Rubric (ALL)](https://github.com/lydia-c2/lyds.github.io/issues/15)
 
 ## [College Board's Grade](https://drive.google.com/file/d/1HXDauimq8edpT0-aZ2iIujzLdIxtyKMx/view)
 
+# Video #1
 
-
-### REFLECTION:
 
 #### Row 1
 This person did not meet the requirements as they explained the function, not the purpose.
@@ -49,7 +48,11 @@ Row six did meet the three criteria, earning the point.
 ### Reflection:
 Based on this, I believe I have somewhat gotten a good understanding of the college board grading process. I have noticed that explaining purpose instead of functionality is something I must really make sure I understand before my project as it is a requirement that many people miss. I can refer to this example to help me understand how to meet the requirements as well. 
 
+</br>
+
 # Video 2
+
+## [College Board's Grade](https://drive.google.com/file/d/1bzSueMdVVt3QVmkMCSKEkIVd9mZ3hQBP/view)
 
 #### Row 1
 
@@ -80,7 +83,12 @@ College board and I both got the same score, giving them a point for meeting all
 Based on this, I believe I have somewhat gotten a good understanding of the college board grading process. I can refer to this example to help me understand how to meet the requirements as well. 
 
 
+
+</br>
+
 # Video 3
+
+## [College Board's Grade](https://drive.google.com/file/d/1dX7KNT9axip5DQDEYdIYbuajcrWUB4lR/view)
 
 #### Row 1
 
@@ -111,7 +119,13 @@ College board and I both got the same score, giving them a point for meeting all
 ### Reflection:
 Based on this, I believe I have somewhat gotten a good understanding of the college board grading process. I noticed I gave this person a point when they didn't explain the purpose, which is something I must look out for when I am writing my written response. I can refer to this example to help me understand how to meet the requirements as well. 
 
+
+
+</br>
+
 # Video 4
+
+## [College Board's Grade](https://drive.google.com/file/d/1so2WKNMi5vONuFCWZFFUqq8gVWNe_jCS/view)
 
 #### Row 1
 
