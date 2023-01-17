@@ -5,7 +5,7 @@ title: College Board Grading 3-6
 toc: false
 comments: true
 permalink: /markdown/videoGrades2
-categories: [College Board Video Grades Week 18]
+categories: [College Board Video Grades]
 layout: post
 
 ---
