@@ -15,7 +15,7 @@ layout: post
 
 
 
-## [My Rubric (ALL)](https://github.com/lydia-c2/lyds.github.io/issues/15)
+## [My Rubric (ALL)](https://github.com/lydia-c2/lyds.github.io/issues/17)
 
 ## [College Board's Grade](https://drive.google.com/file/d/19KBDJTwn0DPSKhBUz2bFSMEtnNcnpEZx/view)
 
