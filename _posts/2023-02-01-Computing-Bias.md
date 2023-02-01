@@ -1,0 +1,43 @@
+--- 
+
+description: Computing Bias Hacks
+title: Computing Bias Questions
+toc: false
+comments: true
+permalink: /markdown/ComputingBiasHacks
+categories: [Week 21]
+layout: post
+
+---
+
+# Intentional or Purposeful bias
+
+### Tiktok Age Range
+16-24
+
+
+### Facebook Age Range
+25-34
+
+### Is there purposeful exclusion?
+
+Facebook seems to appeal to a more mature audience, while tiktok promotes a platform for younger people. Facebook focuses on a more community based, communication site where audiences can talk and make groups. Tiktok focuses on more entertainment, promoting creativity and videos appealing towards younger generations.
+
+### Why do virtual assistants have female voices?
+
+In a more negative light, virtual assistants may have female voices due to the long standing gender role that women are there to serve and help. If this bias is true, then it can be harmful as it continues to support the idea that women are supposed to be obedient and serve whenever called. However, there are options to change the voices, from accents to gender.
+
+### An algorithm that influences your decisions?
+
+Algorithms that influence decisions are mostly social medias, such as tiktok or instagram. These platforms create trends, influencing people to take part in what is popular, even if it may be dangerous. 
+Plus, searching or clicking on things you may be interested in begin to affect the content you will see.
+
+
+<br>
+
+# HP Computers are Racist
+
+[HP Computers are Racist Video](https://www.youtube.com/watch?v=t4DT3tQqgRM)
+
+
+The owner of the computer believes this is intentional, calling the computer racist. I think this may have happened because of a testing flaw, however this is an error that should be fixed. That being said, I don't believe this happened with racist intent, it is just an error that needs to be fixed. I think it could be fixed by tracking facial shape, facial features, etc in more depth.
