@@ -1,16 +1,18 @@
 --- 
 
-description: Computing Bias Hacks
-title: Computing Bias Questions
+description: Computing Bias and Crowdsourcing
+title: 5.3 and 5.4 Hacks
 toc: false
 comments: true
-permalink: /markdown/ComputingBiasHacks
+permalink: /markdown/ComputingBiasandCrowdsourcing
 categories: [Week 21]
 layout: post
 
 ---
 
-# Intentional or Purposeful bias
+# 5.3 Computing Bias
+
+## Intentional or Purposeful bias
 
 ### Tiktok Age Range
 16-24
@@ -35,9 +37,20 @@ Plus, searching or clicking on things you may be interested in begin to affect t
 
 <br>
 
-# HP Computers are Racist
+## HP Computers are Racist
 
 [HP Computers are Racist Video](https://www.youtube.com/watch?v=t4DT3tQqgRM)
 
 
 The owner of the computer believes this is intentional, calling the computer racist. I think this may have happened because of a testing flaw, however this is an error that should be fixed. That being said, I don't believe this happened with racist intent, it is just an error that needs to be fixed. I think it could be fixed by tracking facial shape, facial features, etc in more depth.
+
+
+<br>
+
+# 5.4 Crowdsourcing
+
+1. In Github, you can see a person's repositories, their files, and the raw code for their files. This allows us to borrow and share code between users and classmates. Furthermore, we use this feature to allow people to "wget" files, like we did in the student lessons.
+
+2. I noticed that the most voted files are likely the most reliable ones. They have been used many times, over 1000, and are also rated gold.
+
+3. 
