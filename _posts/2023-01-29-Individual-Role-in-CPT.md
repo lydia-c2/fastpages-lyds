@@ -44,8 +44,9 @@ The program meets this row's requirements through the detection of garbage data.
 2. If garbage data is inputted, the data will not pass through the conditionals and an error message will occur as the output. 
 
 
+[Collegeboard Based Grade](https://github.com/lydia-c2/lyds.github.io/issues/18)
 
 
 ### Reflection:
 
-I need to specify how the program meets the collegeboard requirements. Going forward, I must also make sure to keep these in mind to make sure it fully meets expectations.
+I need to specify how the program meets the collegeboard requirements. Going forward, I must also make sure to keep these in mind to make sure it fully meets expectations. Based on the grade I gave myself for row 4, I need to describe the procedural abstraction as well as have 2 segments of code showing the functionality of the procedure, and the procedure being called.
