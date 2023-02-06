@@ -53,4 +53,14 @@ The owner of the computer believes this is intentional, calling the computer rac
 
 2. I noticed that the most voted files are likely the most reliable ones. They have been used many times, over 1000, and are also rated gold.
 
-3. 
+1. CompSci has 150 ish principles students. Describe a crowdsource idea and how you might initiate it in our environment?
+
+One crowdsourcing idea for compsci students could be creating a study guide or knowledge inputs of the students for specific terms or code programs to show what we have learned and apply our knowledge together and create a reliable source of information.
+
+2. What about Del Norte crowdsourcing? Could your project be better with crowdsourcing?
+
+Crowdsourcing at Del Norte could be gathering input on class difficulty or rating classes to help upcoming students decide what they would like to take.
+
+3. What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.
+
+You could compile the amount of people with a certain theme.
