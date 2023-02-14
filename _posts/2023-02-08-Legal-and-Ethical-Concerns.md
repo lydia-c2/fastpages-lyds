@@ -35,11 +35,18 @@ Close source - have to pay
     - Capitalism
 
 
+<br>
+
+
 
 ## 5.5 Blog Post Reflection
 
 1. When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in your personal blog.
+Open source MIT
+
 2. In your blog, summarize the discussions and personal analysis on Software Licenses/Options, Digital Rights, and other Legal and Ethical thoughts from this College Board topic.
+Open sourced licenses are more focused on community, while closed sources are focuses on making sales.
+
 3. Make a license for your personal (blog) and Team repositories for the CPT project. Be sure to have a license for both Team GitHub repositories (frontend/backend). Document license(s) you picked and why. FYI, frontend, since it is built on GitHub pages may come with a license and restrictions. Document in blog how team made license choice and process of update.
 
 - We have chosen the MIT Open Source
@@ -55,28 +62,40 @@ Terms and Conditions
     - EX: Apps, Music, 
 
 
-***Multi-factor authentication*** often requires you to enter a code that has been texted or emailed to you. Other types of authentication are biometrics (finger print or facial recognition).
+***Multi-factor authentication*** 
+often requires you to enter a code that has been texted or emailed to you. Other types of authentication are biometrics (finger print or facial recognition).
 
-***Malware*** is often sent in attachments to things in email. Often they request you to click on an attachment and it starts the process of adding a virus to your computer.
+***Malware*** 
+is often sent in attachments to things in email. Often they request you to click on an attachment and it starts the process of adding a virus to your computer.
 
-***Phishing*** is where unknown sources try to entice you into a response, like click here and receive $500. Often such systems impersonate someone like Amazon asking for login information. Be careful to look closely at source of email (ie amzn.com vs amazon.com).
+***Phishing*** 
+is where unknown sources try to entice you into a response, like click here and receive $500. Often such systems impersonate someone like Amazon asking for login information. Be careful to look closely at source of email (ie amzn.com vs amazon.com).
+
 
 - A Virus or Malware compromise security, they are opposite of increasing security.
+
 - Phishing is a way to get a Virus on your machine, or a way to get you to input PII.
+
 - After a Virus or being compromised by Phishing it is advised to review all of you PII vulnerabilities.
 
 
 2FA - Two-factor Authentication
 
 
+<br>
+
 ## Blog Post Reflection:
 1. Describe PII you have seen on project in CompSci Principles.
+
 One example of PII I have seen in a CompSci Project was asking for the name, email and age. The name and email were visible to everyone.
 
 2. What are your feelings about PII and your personal exposure?
+
 I think that one has to be really careful with the PII one shares online. I try not to share my last name on social media or my exact age as it is something that can be potentially dangerous.
 
 3. Describe good and bad passwords? What is another step that is used to assist in authentication.
+
+Good passwords are unpredictable, bad passwords have known PII in them, such as names.
 
 4. Try to describe Symmetric and Asymmetric encryption.
 
