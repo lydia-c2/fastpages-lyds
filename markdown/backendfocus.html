@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -95,7 +95,7 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h2 id="overcoming-challenges">Overcoming Challenges</h2>
+    <h2 id="overcoming-challenges-and-how-it-works">Overcoming Challenges and How it Works</h2>
 
 <ul>
   <li>Throughout this project, I had trouble posting data into the database through the api. Furthermore, we started off with one database called “users,” which was difficult to manage as we were trying to post and get specific data all from one file. Once we created specific api and database py files for each feature, it as much more organized and allowed us to individually POST and GET through postman. This then allowed us to see the inputted data in the SQLite table.</li>
@@ -114,6 +114,23 @@ window.onload = wrap_img;
 <p><img src="/lyds.github.io/images/GarbageCheckError.png" alt="" /></p>
 
 <p>This is the procedure we used to check for garbage data, which in this case would be if the input is less than two characters. This then creates the 210 error which tells the computer not to add the input into the database. Furthermore, we can use in the frontend to send an alert to the user on the screen.</p>
+
+<p><strong>Issues we had</strong></p>
+
+<p>With the garbage data check, it took us a while to figure out how to get the conditionals to actually work. When we tried to make it so the input “!== str” the conditional read integers as strings too. I combated this issue by making sure that input could only be integers (+ and - button on the side of the form). For the exerciseType, we made the conditional check if input was &lt; or &gt; 2 characters. I then  defined this as a 210 error, which I connected to the frontend with another conditional which blocked the posting if a 210 error occured.</p>
+
+<h2 id="timeline">Timeline</h2>
+
+<ul>
+  <li>When we first started the project, we created one api and database for every feature (user.py and users.py). We also tried to do this only on the frontend and call the api and data from frontend file to file. However, this did not work.</li>
+  <li>We created each class and api specifically for each feature; Inspiration, ISPE, Inputworkout, and workouts. Originally, they were all in the same file, but we split them up and created a new py file for each one.</li>
+  <li>When we created our flask page, we moved all the database and api files into the teambaddieflask repo.</li>
+  <li>From there, we had to troubleshoot the errors that came up when using Postman. At this point, we ran localhost to localhost to allow us to continue to edit the backend (we also had not deployed).</li>
+  <li>We continued to add to our own features, and I added the classes within my file to create places for my data from the frontend to be stored. Once postman started working, we had to troubleshoot why there was a creation error in the table. We eventually figured out this was because there was no id or uid input, which was defined as “required.”</li>
+  <li>We fixed this as defining uid as “datetime” in the backend api</li>
+  <li>Finally, we fixed our garbage data check.</li>
+  <li>Then, we rebuilt our deployed page through aws.</li>
+</ul>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
