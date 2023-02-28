@@ -11,7 +11,7 @@ layout: post
 ---
 
 
-![Workout Plans]({{site.baseurl}}/images/WorkoutInput.png)
+![Workout Plans]({{site.baseurl}}/images/TableSS.png)
 
 
 ### ROW 1
