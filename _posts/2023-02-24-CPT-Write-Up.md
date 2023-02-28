@@ -1,11 +1,11 @@
 --- 
 
 description: My CPT
-title: CPT Proj
+title: College Board Write Up
 toc: false
 comments: true
-permalink: /markdown/IndividualCPTRole
-categories: [Week 20]
+permalink: /markdown/CPTwriteup
+categories: [Week 24]
 layout: post
 
 ---
