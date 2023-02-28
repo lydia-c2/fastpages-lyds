@@ -45,3 +45,6 @@ With the garbage data check, it took us a while to figure out how to get the con
 - We fixed this as defining uid as "datetime" in the backend api
 - Finally, we fixed our garbage data check.
 - Then, we rebuilt our deployed page through aws.
+
+
+[LINK TO OUR ISSUES PAGE (progress through the weeks)](https://github.com/alexac54767/Fitness_4_Baddies/issues)
