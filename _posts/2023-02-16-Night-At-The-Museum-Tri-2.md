@@ -28,7 +28,11 @@ This is a picture of the arcade site I saw when I walked around the Night at the
 
 ![]({{site.baseurl}}/images/ceramicsPic.png)
 
-Finally, I went to visit many of the Art classes like AP Studio Art, Digital Design (I think it's called smthing else), and Ceramics. It was really cool to see all the ceramics artwork. Plus, in studio art, we learned about the prompt behind their art pieces which was really cool. 
+Finally, I went to visit many of the Art classes like AP Studio Art, Digital Design, Photography and Ceramics. It was really cool to see all the ceramics artwork. I also really liked the photos in photography. Plus, in studio art, we learned about the prompt behind their art pieces which was really cool. 
+
+![]({{site.baseurl}}/images/NATM5.JPG)
+
+![]({{site.baseurl}}/images/NATM4.JPG)
  
 ## Next Steps
 
