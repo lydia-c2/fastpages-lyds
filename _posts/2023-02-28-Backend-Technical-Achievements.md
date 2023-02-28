@@ -47,4 +47,16 @@ With the garbage data check, it took us a while to figure out how to get the con
 - Then, we rebuilt our deployed page through aws.
 
 
+## Reflection
+
+- This trimester, I learned a lot about databases, creating apis, and terms through this project as well as the student lessons. 
+- The student lessons at the beginning of the trimester taught me a lot about the basics I need to know for CSP. Conditionals, lists, selection, sequencing, and iteration are just some of the important terms I used throughout this project. 
+- One of the most important things I learned to do this trimester was create a database to store inputted data
+- Data abstraction --> building an api
+- Procedural Abstraction --> fetch from api
+
+- These skills and knowledge I've acquired will allow me to use this in real-life scenarios such as building a website for a business. 
+
+
+
 [LINK TO OUR ISSUES PAGE (progress through the weeks)](https://github.com/alexac54767/Fitness_4_Baddies/issues)
