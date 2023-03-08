@@ -140,6 +140,7 @@ window.onload = wrap_img;
 <li>"Data compression is used to save transmission time and storage space."</li>
 <li>"lossy data can reduce data but the original data is not recovered"</li>
 <li>"lossless data lets you restore and recover"</li>
+<li>repeating statement for things tht repeat (pixels) - form of compression</li>
 </ul>
 </blockquote>
 <p>The <a href="https://csp.nighthawkcodingsociety.com/starter/rgb/">Image Lab Project</a> contains a plethora of College Board Unit 2 data concepts. Working with Images provides many opportunities for compression and analyzing size.</p>
@@ -174,66 +175,32 @@ window.onload = wrap_img;
 </blockquote>
 <h3 id="pathlib">pathlib<a class="anchor-link" href="#pathlib"> </a></h3><blockquote><p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
-<li>What are commands you use in terminal to access files?</li>
-<li>What are the command you use in Windows terminal to access files?</li>
+<li>What are commands you use in terminal to access files?<ul>
+<li>ls </li>
+</ul>
+</li>
+<li>What are the command you use in Windows terminal to access files?<ul>
+<li>wsl</li>
+</ul>
+</li>
 <li>What are some of the major differences?</li>
 </ul>
 </blockquote>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images?</li>
-<li>How does the meta data source and label relate to Unit 5 topics?</li>
-<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</li>
+<li>Why is path a big deal when working with images?<ul>
+<li>Path allows for </li>
+</ul>
+</li>
+<li><p>How does the meta data source and label relate to Unit 5 topics?</p>
+</li>
+<li><p>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</p>
+</li>
 </ul>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>  <span class="c1"># https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f</span>
-
-<span class="c1"># prepares a series of images</span>
-<span class="k">def</span> <span class="nf">image_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;images/&quot;</span><span class="p">),</span> <span class="n">images</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted</span>
-    <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># default image</span>
-        <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile Image&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile.png&quot;</span><span class="p">}</span>
-        <span class="p">]</span>
-    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
-        <span class="c1"># File to open</span>
-        <span class="n">image</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span>  <span class="c1"># file with path</span>
-    <span class="k">return</span> <span class="n">images</span>
-
-<span class="k">def</span> <span class="nf">image_display</span><span class="p">(</span><span class="n">images</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>  
-        <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]))</span>
-
-
-<span class="c1"># Run this as standalone tester to see sample data printed in Jupyter terminal</span>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="c1"># print parameter supplied image</span>
-    <span class="n">smile_image</span> <span class="o">=</span> <span class="n">image_data</span><span class="p">(</span><span class="n">images</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile Image&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile.png&quot;</span><span class="p">}])</span>
-    <span class="n">image_display</span><span class="p">(</span><span class="n">smile_image</span><span class="p">)</span>
-    
-    <span class="c1"># display default images from image_data()</span>
-    <span class="n">default_images</span> <span class="o">=</span> <span class="n">image_data</span><span class="p">()</span>
-    <span class="n">image_display</span><span class="p">(</span><span class="n">default_images</span><span class="p">)</span>
-    
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -249,7 +216,8 @@ window.onload = wrap_img;
     <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># default image</span>
         <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
             <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Clouds Impression&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;clouds-impression.png&quot;</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Lassen Volcano&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;lassen-volcano.jpg&quot;</span><span class="p">}</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Lassen Volcano&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;lassen-volcano.jpg&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile Image&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;smiley.png&quot;</span><span class="p">}</span>
         <span class="p">]</span>
     <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
         <span class="c1"># File to open</span>
@@ -285,17 +253,34 @@ window.onload = wrap_img;
 <h2 id="Reading-and-Encoding-Images-(2-implementations-follow)">Reading and Encoding Images (2 implementations follow)<a class="anchor-link" href="#Reading-and-Encoding-Images-(2-implementations-follow)"> </a></h2><h3 id="PIL-(Python-Image-Library)">PIL (Python Image Library)<a class="anchor-link" href="#PIL-(Python-Image-Library)"> </a></h3><blockquote><p><a href="https://pillow.readthedocs.io/en/stable/">Pillow or PIL</a> provides the ability to work with images in Python.  <a href="https://www.geeksforgeeks.org/working-images-python/?ref=lbp">Geeks for Geeks</a> shows some ideas on working with images.</p>
 </blockquote>
 <h3 id="base64">base64<a class="anchor-link" href="#base64"> </a></h3><blockquote><p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?</p>
+
+<pre><code>- It uses binary and 6-bits
+- Uses binary to transform images into characters
+</code></pre>
 <ul>
-<li>Translate first 3 letters of your name to Base64.</li>
+<li>Translate first 3 letters of your name to Base64.<ul>
+<li>001011, 110010, 011101</li>
+</ul>
+</li>
+<li>Asky<ul>
+<li>cannot transfer some characters</li>
+</ul>
+</li>
 </ul>
 </blockquote>
-<h3 id="numpy">numpy<a class="anchor-link" href="#numpy"> </a></h3><blockquote><p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.</p>
+<h3 id="numpy">numpy<a class="anchor-link" href="#numpy"> </a></h3><blockquote><p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.- manage data structures</p>
 </blockquote>
 <h3 id="io,-BytesIO">io, BytesIO<a class="anchor-link" href="#io,-BytesIO"> </a></h3><blockquote><p>Input and Output (I/O) is a fundamental of all Computer Programming. Input/output (I/O) buffering is a technique used to optimize I/O operations.  In large quantities of data, how many frames of input the server currently has queued is the buffer.  In this example, there is a very large picture that lags.</p>
 <ul>
 <li>Where have you been a consumer of buffering?  </li>
-<li>From your consumer experience, what effects have you experienced from buffering?  </li>
-<li>How do these effects apply to images?</li>
+<li>From your consumer experience, what effects have you experienced from buffering?  <ul>
+<li>When my computer buffers it sometimes crashes</li>
+</ul>
+</li>
+<li>How do these effects apply to images?<ul>
+<li>Images often take a long time to load when buffering</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -336,7 +321,8 @@ window.onload = wrap_img;
         <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
             <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Green Square&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;green-square-16.png&quot;</span><span class="p">},</span>
             <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Clouds Impression&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;clouds-impression.png&quot;</span><span class="p">},</span>
-            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Lassen Volcano&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;lassen-volcano.jpg&quot;</span><span class="p">}</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Lassen Volcano&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;lassen-volcano.jpg&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile Image&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;smiley.png&quot;</span><span class="p">}</span>
         <span class="p">]</span>
     <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
         <span class="c1"># File to open</span>
@@ -623,7 +609,10 @@ window.onload = wrap_img;
 <li>In blog add College Board practice problems for 2.3</li>
 <li>Choose 2 images, one that will more likely result in lossy data compression and one that is more likely to result in lossless data compression. Explain.</li>
 </ul>
-<p>Project Addition</p>
+</blockquote>
+<p><br /></p>
+<p>The green square image is one that is likely to result in a lossless data compression due to the repetition of pixels, which one can compress and decompress without losing data. More detailed and larger images, with more detailed pixels, like the monet-style mountain image would result in lossy data compression.</p>
+<blockquote><p>Project Addition</p>
 <ul>
 <li>If your project has images in it, try to implement an image change that has a purpose. (Ex. An item that has been sold out could become gray scale)</li>
 </ul>
