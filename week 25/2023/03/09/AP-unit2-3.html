@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      13 min read
     
 </span></p>
 
@@ -166,6 +166,16 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Dark grey - meta data</li>
+<li>Light grey - data</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -178,6 +188,132 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-AP-unit2-3.ipynb#W3sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> &#39;&#39;&#39;Pandas is used to gather data sets through its DataFrames implementation&#39;&#39;&#39;
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-AP-unit2-3.ipynb#W3sZmlsZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span> import pandas as pd
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/__init__.py:22</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     19</span> del hard_dependencies, dependency, missing_dependencies
+<span class="ansi-green-intense-fg ansi-bold">     21</span> # numpy compat
+<span class="ansi-green-fg">---&gt; 22</span> from pandas.compat import is_numpy_dev as _is_numpy_dev
+<span class="ansi-green-intense-fg ansi-bold">     24</span> try:
+<span class="ansi-green-intense-fg ansi-bold">     25</span>     from pandas._libs import hashtable as _hashtable, lib as _lib, tslib as _tslib
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/compat/__init__.py:15</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span> import sys
+<span class="ansi-green-intense-fg ansi-bold">     14</span> from pandas._typing import F
+<span class="ansi-green-fg">---&gt; 15</span> from pandas.compat.numpy import (
+<span class="ansi-green-intense-fg ansi-bold">     16</span>     is_numpy_dev,
+<span class="ansi-green-intense-fg ansi-bold">     17</span>     np_version_under1p19,
+<span class="ansi-green-intense-fg ansi-bold">     18</span>     np_version_under1p20,
+<span class="ansi-green-intense-fg ansi-bold">     19</span> )
+<span class="ansi-green-intense-fg ansi-bold">     20</span> from pandas.compat.pyarrow import (
+<span class="ansi-green-intense-fg ansi-bold">     21</span>     pa_version_under1p01,
+<span class="ansi-green-intense-fg ansi-bold">     22</span>     pa_version_under2p0,
+<span class="ansi-green-intense-fg ansi-bold">     23</span>     pa_version_under3p0,
+<span class="ansi-green-intense-fg ansi-bold">     24</span>     pa_version_under4p0,
+<span class="ansi-green-intense-fg ansi-bold">     25</span> )
+<span class="ansi-green-intense-fg ansi-bold">     27</span> PY39 = sys.version_info &gt;= (3, 9)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/compat/numpy/__init__.py:4</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> &#34;&#34;&#34; support numpy compatibility across versions &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">      2</span> import numpy as np
+<span class="ansi-green-fg">----&gt; 4</span> from pandas.util.version import Version
+<span class="ansi-green-intense-fg ansi-bold">      6</span> # numpy versioning
+<span class="ansi-green-intense-fg ansi-bold">      7</span> _np_version = np.__version__
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/util/__init__.py:1</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span> from pandas.util._decorators import (  # noqa:F401
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     Appender,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     Substitution,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     cache_readonly,
+<span class="ansi-green-intense-fg ansi-bold">      5</span> )
+<span class="ansi-green-intense-fg ansi-bold">      7</span> from pandas.core.util.hashing import (  # noqa:F401
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     hash_array,
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     hash_pandas_object,
+<span class="ansi-green-intense-fg ansi-bold">     10</span> )
+<span class="ansi-green-intense-fg ansi-bold">     13</span> def __getattr__(name):
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:14</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> from typing import (
+<span class="ansi-green-intense-fg ansi-bold">      7</span>     Any,
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     Callable,
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     Mapping,
+<span class="ansi-green-intense-fg ansi-bold">     10</span>     cast,
+<span class="ansi-green-intense-fg ansi-bold">     11</span> )
+<span class="ansi-green-intense-fg ansi-bold">     12</span> import warnings
+<span class="ansi-green-fg">---&gt; 14</span> from pandas._libs.properties import cache_readonly  # noqa:F401
+<span class="ansi-green-intense-fg ansi-bold">     15</span> from pandas._typing import F
+<span class="ansi-green-intense-fg ansi-bold">     18</span> def deprecate(
+<span class="ansi-green-intense-fg ansi-bold">     19</span>     name: str,
+<span class="ansi-green-intense-fg ansi-bold">     20</span>     alternative: Callable[..., Any],
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     25</span>     msg: str | None = None,
+<span class="ansi-green-intense-fg ansi-bold">     26</span> ) -&gt; Callable[[F], F]:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/__init__.py:13</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> __all__ = [
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     &#34;NaT&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     &#34;NaTType&#34;,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     &#34;Interval&#34;,
+<span class="ansi-green-intense-fg ansi-bold">     10</span> ]
+<span class="ansi-green-fg">---&gt; 13</span> from pandas._libs.interval import Interval
+<span class="ansi-green-intense-fg ansi-bold">     14</span> from pandas._libs.tslibs import (
+<span class="ansi-green-intense-fg ansi-bold">     15</span>     NaT,
+<span class="ansi-green-intense-fg ansi-bold">     16</span>     NaTType,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     21</span>     iNaT,
+<span class="ansi-green-intense-fg ansi-bold">     22</span> )
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/interval.pyx:1</span>, in <span class="ansi-cyan-fg">init pandas._libs.interval</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/hashtable.pyx:1</span>, in <span class="ansi-cyan-fg">init pandas._libs.hashtable</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/missing.pyx:1</span>, in <span class="ansi-cyan-fg">init pandas._libs.missing</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/tslibs/__init__.py:30</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> __all__ = [
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     &#34;dtypes&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     &#34;localize_pydatetime&#34;,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     26</span>     &#34;tz_compare&#34;,
+<span class="ansi-green-intense-fg ansi-bold">     27</span> ]
+<span class="ansi-green-intense-fg ansi-bold">     29</span> from pandas._libs.tslibs import dtypes
+<span class="ansi-green-fg">---&gt; 30</span> from pandas._libs.tslibs.conversion import (
+<span class="ansi-green-intense-fg ansi-bold">     31</span>     OutOfBoundsTimedelta,
+<span class="ansi-green-intense-fg ansi-bold">     32</span>     localize_pydatetime,
+<span class="ansi-green-intense-fg ansi-bold">     33</span> )
+<span class="ansi-green-intense-fg ansi-bold">     34</span> from pandas._libs.tslibs.dtypes import Resolution
+<span class="ansi-green-intense-fg ansi-bold">     35</span> from pandas._libs.tslibs.nattype import (
+<span class="ansi-green-intense-fg ansi-bold">     36</span>     NaT,
+<span class="ansi-green-intense-fg ansi-bold">     37</span>     NaTType,
+<span class="ansi-green-intense-fg ansi-bold">     38</span>     iNaT,
+<span class="ansi-green-intense-fg ansi-bold">     39</span>     nat_strings,
+<span class="ansi-green-intense-fg ansi-bold">     40</span> )
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/tslibs/conversion.pyx:1</span>, in <span class="ansi-cyan-fg">init pandas._libs.tslibs.conversion</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/pandas/_libs/tslibs/tzconversion.pyx:1</span>, in <span class="ansi-cyan-fg">init pandas._libs.tslibs.tzconversion</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">&lt;frozen importlib._bootstrap&gt;:398</span>, in <span class="ansi-cyan-fg">parent</span><span class="ansi-blue-fg">(self)</span>
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -204,10 +340,13 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">&#39;files/grade.json&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;Pandas is used to gather data sets through its DataFrames implementation&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">&#39;files/grade.json&#39;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="c1"># What part of the data set needs to be cleaned?</span>
+<span class="c1"># The strings inside the df need to be cleaned</span>
 <span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
 </pre></div>
 
@@ -301,6 +440,28 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   Student ID Year in School   GPA
+0         123             12  3.57
+1         246             10  4.00
+3         469             11  3.45
+4         324         Junior  4.75
+5         313             20  3.33
+7         167             10  3.90
+8         235      9th Grade  3.15
+10        469             11  3.45
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -353,8 +514,8 @@ window.onload = wrap_img;
 
 <span class="c1">#the data can be stored as a python dictionary</span>
 <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;calories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">],</span>
-  <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">]</span>
+  <span class="s2">&quot;calories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="mi">500</span><span class="p">],</span>
+  <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="c1">#stores the data in a data frame</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------Dict_to_DF------------------&quot;</span><span class="p">)</span>
@@ -364,7 +525,7 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----------Dict_to_DF_labels--------------&quot;</span><span class="p">)</span>
 
 <span class="c1">#or with the index argument, you can label rows.</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;day1&quot;</span><span class="p">,</span> <span class="s2">&quot;day2&quot;</span><span class="p">,</span> <span class="s2">&quot;day3&quot;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;day1&quot;</span><span class="p">,</span> <span class="s2">&quot;day2&quot;</span><span class="p">,</span> <span class="s2">&quot;day3&quot;</span><span class="p">,</span> <span class="s2">&quot;day4&quot;</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -406,7 +567,10 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pandas-DataFrame-Information">Pandas DataFrame Information<a class="anchor-link" href="#Pandas-DataFrame-Information"> </a></h2>
+<h2 id="Pandas-DataFrame-Information">Pandas DataFrame Information<a class="anchor-link" href="#Pandas-DataFrame-Information"> </a></h2><ul>
+<li>Gives analytics on data</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -582,7 +746,6 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-
 <span class="c1"># Load the titanic dataset</span>
 <span class="n">titanic_data</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;titanic&#39;</span><span class="p">)</span>
 
@@ -682,6 +845,31 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>survived       0.000000
+pclass         2.464072
+sex            0.844311
+age           31.073353
+sibsp          0.562874
+parch          0.398204
+fare          24.835902
+alone          0.616766
+embarked_C     0.185629
+embarked_Q     0.038922
+embarked_S     0.775449
+dtype: float64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -797,6 +985,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>x-train and y-train = dx and dy (calc)</p>
+
+</div>
+</div>
+</div>
 </div>
 
 

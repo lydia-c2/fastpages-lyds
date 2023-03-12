@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      17 min read
     
 </span></p>
 
@@ -183,20 +183,21 @@ window.onload = wrap_img;
 <li>wsl</li>
 </ul>
 </li>
-<li>What are some of the major differences?</li>
+<li>What are some of the major differences?
+Window users use C:\ to store the operating system, system files and other applications and their related files.
+Provide what you observed, struggled with, or leaned while playing with this code.</li>
+<li>Why is path a big deal when working with images?<ul>
+<li>Path allows for different ways to access image files. This is important because in order to render photos, you need a way for the computer to access them.</li>
+</ul>
+</li>
+<li><h2 id="How-does-the-meta-data-source-and-label-relate-to-Unit-5-topics?">How does the meta data source and label relate to Unit 5 topics?<a class="anchor-link" href="#How-does-the-meta-data-source-and-label-relate-to-Unit-5-topics?"> </a></h2></li>
 </ul>
 </blockquote>
-<p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images?<ul>
-<li>Path allows for </li>
+<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?
+IPython notebooks are now called Jupyter Notebooks. Interactive Python is a command shell for interactive computing in multiple programming languages.</li>
 </ul>
-</li>
-<li><p>How does the meta data source and label relate to Unit 5 topics?</p>
-</li>
-<li><p>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</p>
-</li>
-</ul>
+<h3 id="Observations">Observations<a class="anchor-link" href="#Observations"> </a></h3><p>While playing with the grey scale code, I was able to create colors like cyan, hot pink, purple, and the primary light colors. This part was somewhat easy to do, however, it was a little difficult for me to understand how it goes through each pixel and what each function did. One thing I did understand was how putting the average pixel value for each rgb value made grey, and cancelling out some or all but one of the color values would allow you to scale the color. But, after talking to Mr. Mort, I was able to understand a little more how it goes takes the average of the rgb values added together.</p>
 
 </div>
 </div>
@@ -272,7 +273,10 @@ window.onload = wrap_img;
 </blockquote>
 <h3 id="io,-BytesIO">io, BytesIO<a class="anchor-link" href="#io,-BytesIO"> </a></h3><blockquote><p>Input and Output (I/O) is a fundamental of all Computer Programming. Input/output (I/O) buffering is a technique used to optimize I/O operations.  In large quantities of data, how many frames of input the server currently has queued is the buffer.  In this example, there is a very large picture that lags.</p>
 <ul>
-<li>Where have you been a consumer of buffering?  </li>
+<li>Where have you been a consumer of buffering?  <ul>
+<li>When there is too much for a page to load, or the wifi is bad, the page starts to buffer. </li>
+</ul>
+</li>
 <li>From your consumer experience, what effects have you experienced from buffering?  <ul>
 <li>When my computer buffers it sometimes crashes</li>
 </ul>
@@ -291,12 +295,27 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-Structures,-Imperative-Programming-Style,-and-working-with-Images">Data Structures, Imperative Programming Style, and working with Images<a class="anchor-link" href="#Data-Structures,-Imperative-Programming-Style,-and-working-with-Images"> </a></h2><blockquote><p>Introduction to creating meta data and manipulating images.  Look at each procedure and explain the the purpose and results of this program.  Add any insights or challenges as you explored this program.</p>
 <ul>
-<li>Does this code seem like a series of steps are being performed?</li>
-<li>Describe Grey Scale algorithm in English or Pseudo code?</li>
-<li>Describe scale image?  What is before and after on pixels in three images?</li>
-<li>Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
+<li>Does this code seem like a series of steps are being performed?<ul>
+<li>Yes this code follows a sequence as it first creates a dictionary of images, and then cycles through each image to scale it using the scale_image function. After the image is scaled, the function, image_management_add_html_grey(image), is used to go through each pixel in the image, find the rgb average of the pixel, and change the pixel color to the correct shade of grey.</li>
+</ul>
+</li>
+<li>Describe Grey Scale algorithm in English or Pseudo code?<ul>
+<li>In the Grey Scale algorithm, the code takes each pixel in the image and finds the average rgb value for each pixel(o= red, 1=green, and 2=blue). It them takes the average value from this data and converts it into the new color (using the average for the r, g, and b values).</li>
+</ul>
+</li>
+<li>Describe scale image?  What is before and after on pixels in three images?<ul>
+<li>The pixels in the image before have different colors and shades. After running the code, the image is entirely made up of different pixel shades of grey.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
+<ul>
+<li>Is scale image a type of compression?  If so, line it up with College Board terms described?<ul>
+<li>Yes? I think this is a type of compression because you take the average value of the rgb color, compressing the three colors into one average to then scale the color to grey. </li>
+</ul>
+</li>
+</ul>
+<h3 id="Observations-/-Reflection">Observations / Reflection<a class="anchor-link" href="#Observations-/-Reflection"> </a></h3><p>While playing with the grey scale code, I was able to create colors like cyan, hot pink, purple, and the primary light colors. This part was somewhat easy to do, however, it was a little difficult for me to understand how it goes through each pixel and what each function did. One thing I did understand was how putting the average pixel value for each rgb value made grey, and cancelling out some or all but one of the color values would allow you to scale the color. But, after talking to Mr. Mort, I was able to understand a little more how it goes takes the average of the rgb values added together.</p>
 
 </div>
 </div>
@@ -374,7 +393,7 @@ window.onload = wrap_img;
         <span class="c1"># create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/</span>
         <span class="n">average</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">//</span> <span class="mi">3</span>  <span class="c1"># average pixel values and use // for integer division</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="n">image</span><span class="p">[</span><span class="s1">&#39;gray_data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span> <span class="c1"># PNG format</span>
+            <span class="n">image</span><span class="p">[</span><span class="s1">&#39;gray_data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span> <span class="c1"># PNG format - pixel[3] is the extra pixel in png images</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">image</span><span class="p">[</span><span class="s1">&#39;gray_data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">))</span>
         <span class="c1"># end for loop for pixels</span>
@@ -415,6 +434,128 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>  <span class="c1"># https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">pilImage</span> <span class="c1"># as pilImage is used to avoid conflicts</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># prepares a series of images</span>
+<span class="k">def</span> <span class="nf">image_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;images/&quot;</span><span class="p">),</span> <span class="n">images</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted</span>
+    <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># default image</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Green Square&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;green-square-16.png&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Clouds Impression&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;clouds-impression.png&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Peter Carolin&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Lassen Volcano&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;lassen-volcano.jpg&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s2">&quot;Internet&quot;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;Smile Image&quot;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="s2">&quot;smiley.png&quot;</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
+        <span class="c1"># File to open</span>
+        <span class="n">image</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span>  <span class="c1"># file with path</span>
+    <span class="k">return</span> <span class="n">images</span>
+
+<span class="c1"># Large image scaled to baseWidth of 320</span>
+<span class="k">def</span> <span class="nf">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="n">baseWidth</span> <span class="o">=</span> <span class="mi">320</span>
+    <span class="n">scalePercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">scaleHeight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">scalePercent</span><span class="p">)))</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="p">,</span> <span class="n">scaleHeight</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span>
+
+<span class="c1"># PIL image converted to base64</span>
+<span class="k">def</span> <span class="nf">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">format</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">BytesIO</span><span class="p">()</span> <span class="k">as</span> <span class="n">buffer</span><span class="p">:</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">buffer</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+
+<span class="c1"># Set Properties of Image, Scale, and convert to Base64</span>
+<span class="k">def</span> <span class="nf">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted        </span>
+    <span class="c1"># Image open return PIL image object</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">pilImage</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">])</span>
+    
+    <span class="c1"># Python Image Library operations</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;mode&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+    <span class="c1"># Scale the Image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;pil&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;scaled_size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+    <span class="c1"># Scaled HTML</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;html&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;img src=&quot;data:image/png;base64,</span><span class="si">%s</span><span class="s1">&quot;&gt;&#39;</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;pil&#39;</span><span class="p">],</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">])</span>
+    
+<span class="c1"># Create Blue Scale Base64 representation of Image</span>
+<span class="k">def</span> <span class="nf">image_management_add_html_purple</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="c1"># Image open return PIL image object</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;pil&#39;</span><span class="p">]</span>
+    <span class="nb">format</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span>
+    
+    <span class="n">img_data</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getdata</span><span class="p">()</span>  <span class="c1"># Reference https://www.geeksforgeeks.org/python-pil-image-getdata/</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img_data</span><span class="p">)</span> <span class="c1"># PIL image to numpy array</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;purple_data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># key/value for data converted to purple scale</span>
+
+    <span class="c1"># &#39;data&#39; is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted</span>
+    <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]:</span>
+        <span class="c1"># create blue scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/</span>
+    <span class="c1"># average takes the average pixel color (rgb) and turns it into the new color  (purple = rb)</span>
+        <span class="n">average</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">//</span> <span class="mi">3</span>  <span class="c1"># Pixel 0,1,2 are rgb - average pixel values and use // for integer division</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">image</span><span class="p">[</span><span class="s1">&#39;purple_data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span> <span class="c1"># PNG format pixel[3] is extra png pixel (focus)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">image</span><span class="p">[</span><span class="s1">&#39;purple_data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">average</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">average</span><span class="p">))</span>
+        <span class="c1"># end for loop for pixels</span>
+        
+    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;purple_data&#39;</span><span class="p">])</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">&#39;html_purple&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;img src=&quot;data:image/png;base64,</span><span class="si">%s</span><span class="s1">&quot;&gt;&#39;</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
+
+
+<span class="c1"># Jupyter Notebook Visualization of Images</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># Use numpy to concatenate two arrays</span>
+    <span class="n">images</span> <span class="o">=</span> <span class="n">image_data</span><span class="p">()</span>
+    
+    <span class="c1"># Display meta data, scaled view, and grey scale for each image</span>
+    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
+        <span class="n">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---- meta data -----&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;mode&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original size: &quot;</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scaled size: &quot;</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;scaled_size&#39;</span><span class="p">])</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-- original image --&quot;</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;html&#39;</span><span class="p">]))</span> 
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--- purple image ----&quot;</span><span class="p">)</span>
+        <span class="n">image_management_add_html_purple</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">&#39;html_purple&#39;</span><span class="p">]))</span> 
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Purple-Shift-Output-(running-cell-causes-github-to-buffer)">Purple Shift Output (running cell causes github to buffer)<a class="anchor-link" href="#Purple-Shift-Output-(running-cell-causes-github-to-buffer)"> </a></h2><p><img src="/lyds.github.io/images/copied_from_nb/images/PurpleShift.png" alt="Purple Shift" /></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-Structures-and-OOP">Data Structures and OOP<a class="anchor-link" href="#Data-Structures-and-OOP"> </a></h2><blockquote><p>Most data structures classes require Object Oriented Programming (OOP).  Since this class is lined up with a College Course,  OOP will be talked about often.  Functionality in remainder of this Blog is the same as the prior implementation.  Highlight some of the key difference you see between imperative and oop styles.</p>
@@ -425,9 +566,9 @@ window.onload = wrap_img;
 </ul>
 </blockquote>
 <h2 id="Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-...">Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ...<a class="anchor-link" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..."> </a></h2><ul>
-<li>PIL</li>
-<li>numpy</li>
-<li>base64</li>
+<li>PIL Python Imaging Library - an additional library one cna import to open, manipulate, and save many different image file formats</li>
+<li>numpy - Allows you to work with arrays and mathematical functions. </li>
+<li>base64 - Base 64 is used to convert bytes that have binary or text data into plain text characters (i.e. the alphabet). This allows for code or binary to be easier for us to read.</li>
 </ul>
 
 </div>
@@ -611,14 +752,17 @@ window.onload = wrap_img;
 </ul>
 </blockquote>
 <p><br /></p>
-<p>The green square image is one that is likely to result in a lossless data compression due to the repetition of pixels, which one can compress and decompress without losing data. More detailed and larger images, with more detailed pixels, like the monet-style mountain image would result in lossy data compression.</p>
+<ul>
+<li>The green square image is one that is likely to result in a lossless data compression due to the repetition of pixels, which one can compress and decompress without losing data. </li>
+<li>More detailed and larger images, with more detailed pixels, like the monet-style mountain image would result in lossy data compression.</li>
+</ul>
 <blockquote><p>Project Addition</p>
 <ul>
 <li>If your project has images in it, try to implement an image change that has a purpose. (Ex. An item that has been sold out could become gray scale)</li>
 </ul>
 <p>Pick a programming paradigm and solve some of the following ...</p>
 <ul>
-<li>Numpy, manipulating pixels.  As opposed to Grey Scale treatment, pick a couple of other types like red scale, green scale, or blue scale.  We want you to be manipulating pixels in the image.</li>
+<li><strong>Numpy, manipulating pixels.  As opposed to Grey Scale treatment, pick a couple of other types like red scale, green scale, or blue scale.  We want you to be manipulating pixels in the image.</strong></li>
 <li>Binary and Hexadecimal reports.  Convert and produce pixels in binary and Hexadecimal and display.</li>
 <li>Compression and Sizing of images.  Look for insights into compression Lossy and Lossless.  Look at PIL library and see if there are other things that can be done.</li>
 <li>There are many effects you can do as well with PIL. Blur the image or write Meta Data on screen, aka Title, Author and Image size.</li>
