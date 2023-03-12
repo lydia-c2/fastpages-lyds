@@ -159,9 +159,19 @@ window.onload = wrap_img;
 </blockquote>
 <p>Describe some of the meta data and considerations when managing Image files.  Describe how these relate to Data Compression ...</p>
 <ul>
-<li>File Type, PNG and JPG are two types used in this lab</li>
-<li>Size, height and width, number of pixels</li>
-<li>Visual perception, lossy compression</li>
+<li>File Type, PNG and JPG are two types used in this lab<ul>
+<li>PNG analyzes the data in the image to see what patterns there are to be compressed. The patterns in the data are reduced to shorter code, compressing the file to make it smaller. PNG also has a fourth pixel in the image data.</li>
+<li>JPG and other file types work similarly, finding patterns in the image data to be converted into a shorter code.</li>
+</ul>
+</li>
+<li>Size, height and width, number of pixels<ul>
+<li>Sizing an image down reduces the number of pixels in the image</li>
+</ul>
+</li>
+<li>Visual perception, lossy compression<ul>
+<li>Lossy compression is when you compress data and lose some of it if you decompress it. For example, JPEG files compress the image data, causing some of the original data to be loss and degradation to occur.</li>
+</ul>
+</li>
 </ul>
 
 </div>
