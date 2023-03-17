@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -288,6 +288,67 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;files/nba_player.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">#print compResults csv file</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                     name  year_start  year_end position height  weight  \
+0          Alaa Abdelnaby        1991      1995      F-C   6-10   240.0   
+1         Zaid Abdul-Aziz        1969      1978      C-F    6-9   235.0   
+2     Kareem Abdul-Jabbar        1970      1989        C    7-2   225.0   
+3      Mahmoud Abdul-Rauf        1991      2001        G    6-1   162.0   
+4       Tariq Abdul-Wahad        1998      2003        F    6-6   223.0   
+...                   ...         ...       ...      ...    ...     ...   
+4544           Ante Zizic        2018      2018      F-C   6-11   250.0   
+4545             Jim Zoet        1983      1983        C    7-1   240.0   
+4546            Bill Zopf        1971      1971        G    6-1   170.0   
+4547          Ivica Zubac        2017      2018        C    7-1   265.0   
+4548           Matt Zunic        1949      1949      G-F    6-3   195.0   
+
+             birth_date                                college  
+0         June 24, 1968                        Duke University  
+1         April 7, 1946                  Iowa State University  
+2        April 16, 1947  University of California, Los Angeles  
+3         March 9, 1969             Louisiana State University  
+4      November 3, 1974              San Jose State University  
+...                 ...                                    ...  
+4544    January 4, 1997                                    NaN  
+4545  December 20, 1953                  Kent State University  
+4546       June 7, 1948                    Duquesne University  
+4547     March 18, 1997                                    NaN  
+4548  December 19, 1919           George Washington University  
+
+[4549 rows x 8 columns]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">

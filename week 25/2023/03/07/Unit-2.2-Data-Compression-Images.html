@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -553,6 +553,47 @@ IPython notebooks are now called Jupyter Notebooks. Interactive Python is a comm
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 6&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb#X11sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> from io import BytesIO
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb#X11sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> import base64
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb#X11sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> import numpy as np
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb#X11sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> # prepares a series of images
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-07-Unit-2.2-Data-Compression-Images.ipynb#X11sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> def image_data(path=Path(&#34;images/&#34;), images=None):  # path of static images is defaulted
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/numpy/__init__.py:363</span>, in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">    356</span>         msg = (&#34;The current Numpy installation ({!r}) fails to &#34;
+<span class="ansi-green-intense-fg ansi-bold">    357</span>                &#34;pass simple sanity checks. This can be caused for example &#34;
+<span class="ansi-green-intense-fg ansi-bold">    358</span>                &#34;by incorrect BLAS library being linked in, or by mixing &#34;
+<span class="ansi-green-intense-fg ansi-bold">    359</span>                &#34;package managers (pip, conda, apt, ...). Search closed &#34;
+<span class="ansi-green-intense-fg ansi-bold">    360</span>                &#34;numpy issues for similar problems.&#34;)
+<span class="ansi-green-intense-fg ansi-bold">    361</span>         raise RuntimeError(msg.format(__file__)) from None
+<span class="ansi-green-fg">--&gt; 363</span> _sanity_check()
+<span class="ansi-green-intense-fg ansi-bold">    364</span> del _sanity_check
+<span class="ansi-green-intense-fg ansi-bold">    366</span> def _mac_os_check():
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/numpy/__init__.py:353</span>, in <span class="ansi-cyan-fg">_sanity_check</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">    351</span> try:
+<span class="ansi-green-intense-fg ansi-bold">    352</span>     x = ones(2, dtype=float32)
+<span class="ansi-green-fg">--&gt; 353</span>     if not abs(x.dot(x) - 2.0) &lt; 1e-5:
+<span class="ansi-green-intense-fg ansi-bold">    354</span>         raise AssertionError()
+<span class="ansi-green-intense-fg ansi-bold">    355</span> except AssertionError:
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
 </div>
 </div>
 
