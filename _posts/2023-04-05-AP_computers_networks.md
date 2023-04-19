@@ -50,32 +50,32 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - **Path** - between 2 computing devices is a sequence of directly connected computing devices that begins at the sender and ends at the receiver
+    - **Route** - the process of finding a path from sender to receiver
+    - **Computer System** - is a group of computing devices and programs working together for a common purpose
+    - **Computer Device** - a physical artifact that can run a program
+    - **Bandwidth** - the maximum amount of data that can be sent in a fixed amount of time
+    - **Computer Network** - type of computing system
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
 
 - Essential Knowledge
-    - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
-    - Access to the internet depends on the ability to connect a computing device to an internet connected device.
-    - A protocol is an agreed-upon set of rules that specify the behavior of a system.
+    - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols. - T
+    - Access to the internet depends on the ability to connect a computing device to an internet connected device. - T
+    - A protocol is an agreed-upon set of rules that specify the behavior of a system. - T
     - The protocols used in the internet are open, which allows users to easily connect additional computing devices to the internet.
     - Routing on the internet is usually dynamic; it is not specified in advance
     - The scalability of a system is the capacity for the system to change in size and scale to meet new demands.
     - The internet was designed to be scalable
     - Information is passed through the internet as a data stream. Data streams contain chunks of data, which are encapsulated in packets. 
-    - Packets contain a chunk of data and metadata used for routing the packet between the origin and the destination on the internet, as well as for data reassembly.
-    - Packets may arrive at the destination in order, out of order, or not at all
+    - Packets contain a chunk of data and metadata used for routing the packet between the origin and the destination on the internet, as well as for data reassembly. - T
+    - Packets may arrive at the destination in order, out of order, or not at all - T
     - IP, TCP and UDP are common protocols used on the internet.
     - The world wide web is a system of linked pages, programs, and files.
-    - HTTP is a protocol used by the world wide web
-    - The world wide web uses the internet
+    - HTTP is a protocol used by the world wide web - T
+    - The world wide web uses the internet - T
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
