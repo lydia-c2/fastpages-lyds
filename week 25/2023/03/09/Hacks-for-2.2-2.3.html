@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      10 min read
     
 </span></p>
 
@@ -425,6 +425,423 @@ Frank Mangiapane        G   5-10
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Requests is a HTTP library for the Python programming language. </span>
+<span class="sd">The goal of the project is to make HTTP requests simpler and more human-friendly. </span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://rapidapi.com/theapiguy/api/free-nba/&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="s2">&quot;first_name&quot;</span><span class="p">,</span><span class="s2">&quot;format&quot;</span><span class="p">:</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="s2">&quot;u&quot;</span><span class="p">:</span><span class="s2">&quot;f&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;7ebc48666emsha8cfa2f50618d2bp1656dcjsn88bf48c50b6f&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;free-nba.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+
+<span class="c1"># This code looks for USA in &quot;countries_stats&quot;</span>
+<span class="c1">##print(&quot;Player&#39;s Height&quot;)</span>
+ <span class="c1">#player = response.json().get(&#39;sports&#39;)</span>
+<span class="c1">#for player in players:  # countries is a list</span>
+    <span class="c1">#if player[&quot;name&quot;] == &quot;Ducks&quot;:  # this filters for USA</span>
+        <span class="c1">#location = response.json().get(&#39;location&#39;)</span>
+       <span class="c1"># print(location)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Players
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">JSONDecodeError</span>                           Traceback (most recent call last)
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/models.py:971</span>, in <span class="ansi-cyan-fg">Response.json</span><span class="ansi-blue-fg">(self, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    970</span> try:
+<span class="ansi-green-fg">--&gt; 971</span>     return complexjson.loads(self.text, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    972</span> except JSONDecodeError as e:
+<span class="ansi-green-intense-fg ansi-bold">    973</span>     # Catch JSON-related errors and raise as requests.JSONDecodeError
+<span class="ansi-green-intense-fg ansi-bold">    974</span>     # This aliases json.JSONDecodeError and simplejson.JSONDecodeError
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/json/__init__.py:346</span>, in <span class="ansi-cyan-fg">loads</span><span class="ansi-blue-fg">(s, cls, object_hook, parse_float, parse_int, parse_constant, object_pairs_hook, **kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    343</span> if (cls is None and object_hook is None and
+<span class="ansi-green-intense-fg ansi-bold">    344</span>         parse_int is None and parse_float is None and
+<span class="ansi-green-intense-fg ansi-bold">    345</span>         parse_constant is None and object_pairs_hook is None and not kw):
+<span class="ansi-green-fg">--&gt; 346</span>     return _default_decoder.decode(s)
+<span class="ansi-green-intense-fg ansi-bold">    347</span> if cls is None:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/json/decoder.py:337</span>, in <span class="ansi-cyan-fg">JSONDecoder.decode</span><span class="ansi-blue-fg">(self, s, _w)</span>
+<span class="ansi-green-intense-fg ansi-bold">    333</span> &#34;&#34;&#34;Return the Python representation of ``s`` (a ``str`` instance
+<span class="ansi-green-intense-fg ansi-bold">    334</span> containing a JSON document).
+<span class="ansi-green-intense-fg ansi-bold">    335</span> 
+<span class="ansi-green-intense-fg ansi-bold">    336</span> &#34;&#34;&#34;
+<span class="ansi-green-fg">--&gt; 337</span> obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+<span class="ansi-green-intense-fg ansi-bold">    338</span> end = _w(s, end).end()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/json/decoder.py:355</span>, in <span class="ansi-cyan-fg">JSONDecoder.raw_decode</span><span class="ansi-blue-fg">(self, s, idx)</span>
+<span class="ansi-green-intense-fg ansi-bold">    354</span> except StopIteration as err:
+<span class="ansi-green-fg">--&gt; 355</span>     raise JSONDecodeError(&#34;Expecting value&#34;, s, err.value) from None
+<span class="ansi-green-intense-fg ansi-bold">    356</span> return obj, end
+
+<span class="ansi-red-fg">JSONDecodeError</span>: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">JSONDecodeError</span>                           Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-Hacks-for-2.2-2.3.ipynb Cell 13</span> in <span class="ansi-cyan-fg">&lt;cell line: 21&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-Hacks-for-2.2-2.3.ipynb#X16sZmlsZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span> response = requests.request(&#34;GET&#34;, url, headers=headers, params=querystring)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-Hacks-for-2.2-2.3.ipynb#X16sZmlsZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span> print(&#34;Players&#34;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/lydiacho/vscode/lyds.github.io/_notebooks/2023-03-09-Hacks-for-2.2-2.3.ipynb#X16sZmlsZQ%3D%3D?line=20&#39;&gt;21&lt;/a&gt;</span> print(response.json())
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/models.py:975</span>, in <span class="ansi-cyan-fg">Response.json</span><span class="ansi-blue-fg">(self, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    971</span>     return complexjson.loads(self.text, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    972</span> except JSONDecodeError as e:
+<span class="ansi-green-intense-fg ansi-bold">    973</span>     # Catch JSON-related errors and raise as requests.JSONDecodeError
+<span class="ansi-green-intense-fg ansi-bold">    974</span>     # This aliases json.JSONDecodeError and simplejson.JSONDecodeError
+<span class="ansi-green-fg">--&gt; 975</span>     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+
+<span class="ansi-red-fg">JSONDecodeError</span>: Expecting value: line 1 column 1 (char 0)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://free-nba.p.rapidapi.com/players&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;page&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="s2">&quot;per_page&quot;</span><span class="p">:</span><span class="s2">&quot;25&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;content-type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/octet-stream&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;7ebc48666emsha8cfa2f50618d2bp1656dcjsn88bf48c50b6f&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;free-nba.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NBA Players&#39; Position&quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">player</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;position&quot;</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">player</span><span class="p">):</span>
+	<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">player</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+		<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+	<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>NBA Players&#39; Position
+
+id 14
+first_name Ike
+height_feet None
+height_inches None
+last_name Anigbogu
+position C
+team {&#39;id&#39;: 12, &#39;abbreviation&#39;: &#39;IND&#39;, &#39;city&#39;: &#39;Indiana&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Central&#39;, &#39;full_name&#39;: &#39;Indiana Pacers&#39;, &#39;name&#39;: &#39;Pacers&#39;}
+weight_pounds None
+
+
+id 25
+first_name Ron
+height_feet None
+height_inches None
+last_name Baker
+position G
+team {&#39;id&#39;: 20, &#39;abbreviation&#39;: &#39;NYK&#39;, &#39;city&#39;: &#39;New York&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Atlantic&#39;, &#39;full_name&#39;: &#39;New York Knicks&#39;, &#39;name&#39;: &#39;Knicks&#39;}
+weight_pounds None
+
+
+id 47
+first_name Jabari
+height_feet None
+height_inches None
+last_name Bird
+position G
+team {&#39;id&#39;: 2, &#39;abbreviation&#39;: &#39;BOS&#39;, &#39;city&#39;: &#39;Boston&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Atlantic&#39;, &#39;full_name&#39;: &#39;Boston Celtics&#39;, &#39;name&#39;: &#39;Celtics&#39;}
+weight_pounds None
+
+
+id 67
+first_name MarShon
+height_feet None
+height_inches None
+last_name Brooks
+position G
+team {&#39;id&#39;: 15, &#39;abbreviation&#39;: &#39;MEM&#39;, &#39;city&#39;: &#39;Memphis&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Southwest&#39;, &#39;full_name&#39;: &#39;Memphis Grizzlies&#39;, &#39;name&#39;: &#39;Grizzlies&#39;}
+weight_pounds None
+
+
+id 71
+first_name Lorenzo
+height_feet None
+height_inches None
+last_name Brown
+position G
+team {&#39;id&#39;: 28, &#39;abbreviation&#39;: &#39;TOR&#39;, &#39;city&#39;: &#39;Toronto&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Atlantic&#39;, &#39;full_name&#39;: &#39;Toronto Raptors&#39;, &#39;name&#39;: &#39;Raptors&#39;}
+weight_pounds None
+
+
+id 90
+first_name Omri
+height_feet None
+height_inches None
+last_name Casspi
+position F
+team {&#39;id&#39;: 15, &#39;abbreviation&#39;: &#39;MEM&#39;, &#39;city&#39;: &#39;Memphis&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Southwest&#39;, &#39;full_name&#39;: &#39;Memphis Grizzlies&#39;, &#39;name&#39;: &#39;Grizzlies&#39;}
+weight_pounds None
+
+
+id 1
+first_name Alex
+height_feet 6
+height_inches 6
+last_name Abrines
+position G
+team {&#39;id&#39;: 21, &#39;abbreviation&#39;: &#39;OKC&#39;, &#39;city&#39;: &#39;Oklahoma City&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Northwest&#39;, &#39;full_name&#39;: &#39;Oklahoma City Thunder&#39;, &#39;name&#39;: &#39;Thunder&#39;}
+weight_pounds 200
+
+
+id 119
+first_name Tyler
+height_feet None
+height_inches None
+last_name Davis
+position C
+team {&#39;id&#39;: 21, &#39;abbreviation&#39;: &#39;OKC&#39;, &#39;city&#39;: &#39;Oklahoma City&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Northwest&#39;, &#39;full_name&#39;: &#39;Oklahoma City Thunder&#39;, &#39;name&#39;: &#39;Thunder&#39;}
+weight_pounds None
+
+
+id 149
+first_name Keenan
+height_feet None
+height_inches None
+last_name Evans
+position G
+team {&#39;id&#39;: 9, &#39;abbreviation&#39;: &#39;DET&#39;, &#39;city&#39;: &#39;Detroit&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Central&#39;, &#39;full_name&#39;: &#39;Detroit Pistons&#39;, &#39;name&#39;: &#39;Pistons&#39;}
+weight_pounds None
+
+
+id 179
+first_name Marcin
+height_feet None
+height_inches None
+last_name Gortat
+position C
+team {&#39;id&#39;: 13, &#39;abbreviation&#39;: &#39;LAC&#39;, &#39;city&#39;: &#39;LA&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Pacific&#39;, &#39;full_name&#39;: &#39;LA Clippers&#39;, &#39;name&#39;: &#39;Clippers&#39;}
+weight_pounds None
+
+
+id 1593
+first_name Andrew
+height_feet None
+height_inches None
+last_name Bogut
+position F
+team {&#39;id&#39;: 10, &#39;abbreviation&#39;: &#39;GSW&#39;, &#39;city&#39;: &#39;Golden State&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Pacific&#39;, &#39;full_name&#39;: &#39;Golden State Warriors&#39;, &#39;name&#39;: &#39;Warriors&#39;}
+weight_pounds None
+
+
+id 241
+first_name Amir
+height_feet 6
+height_inches 9
+last_name Johnson
+position C-F
+team {&#39;id&#39;: 23, &#39;abbreviation&#39;: &#39;PHI&#39;, &#39;city&#39;: &#39;Philadelphia&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Atlantic&#39;, &#39;full_name&#39;: &#39;Philadelphia 76ers&#39;, &#39;name&#39;: &#39;76ers&#39;}
+weight_pounds 240
+
+
+id 392
+first_name Malachi
+height_feet None
+height_inches None
+last_name Richardson
+position G
+team {&#39;id&#39;: 29, &#39;abbreviation&#39;: &#39;UTA&#39;, &#39;city&#39;: &#39;Utah&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Northwest&#39;, &#39;full_name&#39;: &#39;Utah Jazz&#39;, &#39;name&#39;: &#39;Jazz&#39;}
+weight_pounds None
+
+
+id 281
+first_name Zach
+height_feet None
+height_inches None
+last_name Lofton
+position G
+team {&#39;id&#39;: 9, &#39;abbreviation&#39;: &#39;DET&#39;, &#39;city&#39;: &#39;Detroit&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Central&#39;, &#39;full_name&#39;: &#39;Detroit Pistons&#39;, &#39;name&#39;: &#39;Pistons&#39;}
+weight_pounds None
+
+
+id 263
+first_name Kosta
+height_feet 7
+height_inches 0
+last_name Koufos
+position C
+team {&#39;id&#39;: 26, &#39;abbreviation&#39;: &#39;SAC&#39;, &#39;city&#39;: &#39;Sacramento&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Pacific&#39;, &#39;full_name&#39;: &#39;Sacramento Kings&#39;, &#39;name&#39;: &#39;Kings&#39;}
+weight_pounds 245
+
+
+id 382
+first_name Billy
+height_feet None
+height_inches None
+last_name Preston
+position F
+team {&#39;id&#39;: 6, &#39;abbreviation&#39;: &#39;CLE&#39;, &#39;city&#39;: &#39;Cleveland&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Central&#39;, &#39;full_name&#39;: &#39;Cleveland Cavaliers&#39;, &#39;name&#39;: &#39;Cavaliers&#39;}
+weight_pounds None
+
+
+id 384
+first_name Zhou
+height_feet None
+height_inches None
+last_name Qi
+position F-C
+team {&#39;id&#39;: 11, &#39;abbreviation&#39;: &#39;HOU&#39;, &#39;city&#39;: &#39;Houston&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Southwest&#39;, &#39;full_name&#39;: &#39;Houston Rockets&#39;, &#39;name&#39;: &#39;Rockets&#39;}
+weight_pounds None
+
+
+id 388
+first_name Zach
+height_feet None
+height_inches None
+last_name Randolph
+position F
+team {&#39;id&#39;: 26, &#39;abbreviation&#39;: &#39;SAC&#39;, &#39;city&#39;: &#39;Sacramento&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Pacific&#39;, &#39;full_name&#39;: &#39;Sacramento Kings&#39;, &#39;name&#39;: &#39;Kings&#39;}
+weight_pounds None
+
+
+id 430
+first_name DJ
+height_feet None
+height_inches None
+last_name Stephens
+position G-F
+team {&#39;id&#39;: 15, &#39;abbreviation&#39;: &#39;MEM&#39;, &#39;city&#39;: &#39;Memphis&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Southwest&#39;, &#39;full_name&#39;: &#39;Memphis Grizzlies&#39;, &#39;name&#39;: &#39;Grizzlies&#39;}
+weight_pounds None
+
+
+id 437
+first_name Milos
+height_feet None
+height_inches None
+last_name Teodosic
+position G
+team {&#39;id&#39;: 13, &#39;abbreviation&#39;: &#39;LAC&#39;, &#39;city&#39;: &#39;LA&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Pacific&#39;, &#39;full_name&#39;: &#39;LA Clippers&#39;, &#39;name&#39;: &#39;Clippers&#39;}
+weight_pounds None
+
+
+id 448
+first_name Gary
+height_feet None
+height_inches None
+last_name Trent Jr.
+position G
+team {&#39;id&#39;: 25, &#39;abbreviation&#39;: &#39;POR&#39;, &#39;city&#39;: &#39;Portland&#39;, &#39;conference&#39;: &#39;West&#39;, &#39;division&#39;: &#39;Northwest&#39;, &#39;full_name&#39;: &#39;Portland Trail Blazers&#39;, &#39;name&#39;: &#39;Trail Blazers&#39;}
+weight_pounds None
+
+
+id 494
+first_name Michael
+height_feet None
+height_inches None
+last_name Smith
+position 
+team {&#39;id&#39;: 2, &#39;abbreviation&#39;: &#39;BOS&#39;, &#39;city&#39;: &#39;Boston&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Atlantic&#39;, &#39;full_name&#39;: &#39;Boston Celtics&#39;, &#39;name&#39;: &#39;Celtics&#39;}
+weight_pounds None
+
+
+id 495
+first_name John
+height_feet None
+height_inches None
+last_name Morton
+position 
+team {&#39;id&#39;: 6, &#39;abbreviation&#39;: &#39;CLE&#39;, &#39;city&#39;: &#39;Cleveland&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Central&#39;, &#39;full_name&#39;: &#39;Cleveland Cavaliers&#39;, &#39;name&#39;: &#39;Cavaliers&#39;}
+weight_pounds None
+
+
+id 496
+first_name Howard
+height_feet None
+height_inches None
+last_name Wright
+position 
+team {&#39;id&#39;: 1, &#39;abbreviation&#39;: &#39;ATL&#39;, &#39;city&#39;: &#39;Atlanta&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Southeast&#39;, &#39;full_name&#39;: &#39;Atlanta Hawks&#39;, &#39;name&#39;: &#39;Hawks&#39;}
+weight_pounds None
+
+
+id 497
+first_name Michael
+height_feet None
+height_inches None
+last_name Ansley
+position 
+team {&#39;id&#39;: 22, &#39;abbreviation&#39;: &#39;ORL&#39;, &#39;city&#39;: &#39;Orlando&#39;, &#39;conference&#39;: &#39;East&#39;, &#39;division&#39;: &#39;Southeast&#39;, &#39;full_name&#39;: &#39;Orlando Magic&#39;, &#39;name&#39;: &#39;Magic&#39;}
+weight_pounds None
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
